@@ -1,0 +1,5 @@
+
+TRICKS/ SHORTCUTS to make work easy
+
+1. Select the text and press (ctrl + /), the selected data will be comment out
+2. 
