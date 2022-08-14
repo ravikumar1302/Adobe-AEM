@@ -1,0 +1,8 @@
+
+
+1. <p> tag is for paragragh and <pre> tag is also same, but the spacing is same as you did while typing it in editor
+2. Target attribute : 
+    a) <a href="https://google.com" target="_main"> Google </a> , here target attribute is used for opening link in new tab
+    b) <a href="https://google.com"> <img src="link"> </a>,   writing image tag inside anchor tag, maken clickable picture
+
+3. Div Tag : It is a container used to storeother tags, so it doesn't have it's specific work, so it's non sematic tag. It is a Block Element and takes full width of web page.
