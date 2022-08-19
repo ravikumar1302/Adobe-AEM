@@ -2,7 +2,7 @@
 BASIC Points : 
 
 1. By Default index.html file is taken as home-page, otherwise you have to tell the server that this is homepage
-2. HTML is not case-sensitive language. So, body == BODY
+2. HTML is not case-sensitive language. So, body == BODY == BoDy. But it is recommended to use LOWER-CASE
 3. Attribute value can be written in single as well as double quotes, i.e., <html lang = "en"> == <html lang = 'en'>, but as string is mostly written in double quotes, better to write in double quotes
 4. While changing size of image, it is advisable to change only height or width, it will automatically adjust other value. But changing both will affect the aspect ratio, and image looks bad
 5. Use right tag at right places, means use heating tag for heading, not simple text tag and than font size increase, because it affects the page ranking
