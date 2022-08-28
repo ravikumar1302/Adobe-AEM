@@ -1,9 +1,0 @@
-
-0. file Extension : file_name.html
-1. Semantic tag are those tags, whose name signify thier work, like header, main, footer tags etc. While non-semantic can't signify like div and span tag
-2. Inside Main tag : 
-    a) Section Tag  <section>   For a section on your page
-    b) Article Tag  <article>  For an article on your page
-    c) Aside Tag  <aside>   For content aside main content(ads)     : So that, search engine show your pages on the basis of main content, not ads. So, define them separately
-
-3. 
