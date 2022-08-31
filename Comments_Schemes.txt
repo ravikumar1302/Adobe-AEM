@@ -1,0 +1,15 @@
+
+Ways to write comment in different Tech Stacks :
+
+1. Programming Languages :
+    a) C++ : Single line = // text; Multiple line = /* text */
+
+2. Front-End
+    a) HTML : <!-- text -->
+    b) CSS : /* text */
+    c) JS : //
+
+3. Database
+    a) SQL : Single line = -- text; Multiple line =   /* text */
+    b) 
+4. Back-End

@@ -1,0 +1,5 @@
+
+BASIC Points : 
+
+1. SQl is not case-sensitive language.
+2.
