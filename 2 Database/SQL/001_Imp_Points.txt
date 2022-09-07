@@ -1,5 +1,12 @@
 
 BASIC Points : 
 
-1. SQl is not case-sensitive language.
-2.
+1. SQl is not case-sensitive language. But it is prefered to write keyword in UPPER-CASE and objects we are refreng to like table are taken in LOWER-CASE
+    Also, Variable names are also not case-sensetive. Name == name == NAME in SQL
+
+2. Every command in SQL ends with semi-colan(;)
+3.  Execute (All or Selection) -> Ctrl + Shift + Enter.
+    Execute Current Statement -> Ctrl + Enter.
+
+4. Single ('')  and double (" ") both quotes are allowed in SQL for string, but single quote is prefered
+5. 
