@@ -13,6 +13,8 @@ SQL was developed in 1970 by Donald Chamberlin & Raymond Boyce
 3. DBMS : Database Management System
     DBMS is a computized application system which allows organized storage, management, manipulation, handling and maintenance of information
 
+    Data : bit/ byte : collection of raw data, e.g., image, integers, 21.78, 34 etc.
+
     Database : is a well-organized data 
         a) Facilitates access
         b) Facilitates consumption - Understand information
@@ -26,10 +28,11 @@ SQL was developed in 1970 by Donald Chamberlin & Raymond Boyce
         d) Delete
         e) Secure - Control access
         f) Backup / Recover
+    
     System : A set of rules to follow : Protocol
         a) Ensure data validation - Data integrity (Integrity is ensuring that the logical and physical data stored in SQL Server are structurally sound and consistent. Simply put, it means that the data present in SQL Server is written correctly and is where it is expected to be)
         b) Sharing of data
-        c) Concuncy Control (Concurrency occurs when two or more than two users are trying to access the same data or information. DBMS concurrency is considered a problem because accessing data simultaneously by two different users can lead to inconsistent results or invalid behaviour)
+        c) Concurrency Control (Concurrency occurs when two or more than two users are trying to access the same data or information. DBMS concurrency is considered a problem because accessing data simultaneously by two different users can lead to inconsistent results or invalid behaviour)
         d) Sharing of resources
         e) Ensure data consistency during transaction
 
