@@ -8,4 +8,5 @@ BASIC Points :
 4. While changing size of image, it is advisable to change only height or width, it will automatically adjust other value. But changing both will affect the aspect ratio, and image looks bad
 5. Use right tag at right places, means use heating tag for heading, not simple text tag and than font size increase, because it affects the page ranking
 6. Nested comments : use <!~~ abc ~~> inside <!-- --> to make a nested comment.
-7. 
+7. It is good to have only 1 H1 heading in a webpage.
+8. Try having every content of page in some element. You may use <p> for each content. Try avoiding text without having some tag.

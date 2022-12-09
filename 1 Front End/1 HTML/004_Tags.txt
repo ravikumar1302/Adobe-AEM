@@ -1,8 +1,42 @@
 
 
 1. <p> tag is for paragragh and <pre> tag is also same, but the spacing is same as you did while typing it in editor
-2. Target attribute : 
-    a) <a href="https://google.com" target="_main"> Google </a> , here target attribute is used for opening link in new tab
-    b) <a href="https://google.com"> <img src="link"> </a>,   writing image tag inside anchor tag, maken clickable picture
+
+2. <a> anchor tag : Used to create a hyperlink.
+    It is of two types : 
+    a) Links to another page : 
+        e.g.: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML> MDN Web Docs </a>
+              <a href = "#"> hello </a> is used to make link that dosn't point anywhere, just take to top of webpage
+    b) Links to another section of same page : 
+    
+    Target attribute in <a> anchor tag : 
+    a) <a href="https://google.com" target="_main"> Google </a>.  "_main", "_blank" opens link in new tab.
+    b) <a href="https://google.com"> <img src="link"> </a>,   image tag inside anchor tag, makes clickable picture
 
 3. Div Tag : It is a container used to store other tags, so it doesn't have it's specific work, so it's non sematic tag. It is a Block Element and takes full width of web page.
+
+4. <strong> vs <b> : Strong is semantic (i.e., it has meaning). While <b> was used in earlier times and is non-semantic.
+    <em> vs <i> : em or emphasize is semantic and italic is old and non-semantic.
+
+5. <image src =""> </image> == <image src="" /> (add forward slash to avoid writing image closing tag)
+        Attributes : - alt : to specify tooltip for image
+                     - width, height, 
+
+6. <nav> <a> </a> </nav> : Include all the main top links in <nav> tag. It creates a invisible box and group the links.
+        Attributes : 
+
+7. <article> </article> : Used in blog-pages, content related sites.
+8. <header> </header> : To inclde header parts like heading, nav-bar etc
+9. <footer> </footer> : use &copy; to write copyright symbol (c inside circle)
+
+10. <aside> </aside> : is usually used for some secondary information that compliments the information in the main part of the page.
+
+11. Lists : <ol> or <ul> for ordered or unordered list. <li> for list items
+    Attributes : - type : to define the type of list icon (circle, square, roman, alphabat)
+                 - start : used in ordered list to start list from some other value
+
+12. <button> </button> : to create button
+
+13. 
+
+40. <div> </div> : 
