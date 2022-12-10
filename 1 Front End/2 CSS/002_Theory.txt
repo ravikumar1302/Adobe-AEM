@@ -11,8 +11,9 @@ Main Topics : Type of CSS, Selectors, CSS Color, CSS Background, CSS Text & Font
     Sheets : Writing our style in different documents
 
 2. Basic Structure :
-    Selector {
-        Property 1 : value;
+    Selector                        // The selector + Declaration Block is known as CSS Rule
+    {                               // The block inside the curly braces is known as Delaration Block
+        Property 1 : value;         // Each such line is known as Declaration/ Style
         Property 2 : value;
         Property 3 : value;
     }
@@ -21,9 +22,10 @@ Main Topics : Type of CSS, Selectors, CSS Color, CSS Background, CSS Text & Font
 
 3. Three Type : Inline CSS, Internal CSS and External CSS 
     a) Priority Order : Inline > Internal > External
-    b) In inline style attribute is used, in Internal <Style> tag is used. Add all CSS at one place in HTML file
-    c) Demo Code of Internal
+    b) In INLINE style attribute is used, in Internal <Style> tag is used. Add all CSS at one place in HTML file
+    c) Demo Code of INTERNAL : Written inside <head> tag
         <html>
+        <head>
             <style>
                 <!-- Now choose selector like h1, p etc and give values -->
                 h1{
@@ -35,8 +37,9 @@ Main Topics : Type of CSS, Selectors, CSS Color, CSS Background, CSS Text & Font
 
                 }
             </style>
+        </head>
         </html>
-    d) Use <link> tag in html to link External CSS file
+    d) Use <link> tag in html to link EXTERNAL CSS file
         <link rel = "stylesheet" type = "text/css" href = "file_name.css">
 
 5. Five Simple Selectors : 
