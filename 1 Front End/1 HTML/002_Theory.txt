@@ -33,10 +33,15 @@ HTML was invented by Tim Berners Lee in 1993. He is the same man who invented in
     and give id to that section,
     <section id="about us">......</section>
 
-7. Semantic vs non-semantic tags : semantic tags are those tags which make some logical meaning, else they are non-semantic.
-    SEO, screen-reader will easily acces your page if you have more semantic tags. As sematic tags make page more structured.
-
+7. Semantic vs non-semantic tags : semantic tags are those tags which make some logical meaning (Text elements that doesn't affect the structure of your web pages, but they add extra information to the pages)
+    Non-semantic.
+    -SEO, screen-reader will easily acces your page if you have more semantic tags. As sematic tags make page more structured.
+    -  For example, the voice of a screen reader may add emphasis to the words inside the <em> element, 
+    - a search engine might register that your page features a quote if you use the <blockquote> element.
+    
     Semantic : <strong>, <em>, <p>, 
     Non-Semantic : <b>, <i>, <div>, 
 
-8. 
+8. Empty elements : There are a few elements that do not have any words between an opening and closing tag.
+
+9. 

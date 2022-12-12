@@ -2,41 +2,167 @@
 
 1. <p> tag is for paragragh and <pre> tag is also same, but the spacing is same as you did while typing it in editor
 
-2. <a> anchor tag : Used to create a hyperlink.
-    It is of two types : 
-    a) Links to another page : 
+--------------------------------------------------------------------------------------------------------------------------------------
+
+2. HYPERLINK : <a> anchor tag
+    
+    2.1. Links to another page : 
         e.g.: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML> MDN Web Docs </a>
               <a href = "#"> hello </a> is used to make link that dosn't point anywhere, just take to top of webpage
-    b) Links to another section of same page : 
+
+    2.2. Links to specific section of same page : 
+        - using the id attribute (on any HTML tag). The value of the id attribute should start with a letter or an underscore (not a number or any other character) and, on a single page, no two id attributes should have the same value.
+        - To link to an tag that uses an id attribute you use the <a> element again, but the value of the href attribute starts with the # symbol, followed by the value of the id attribute of the element you want to link to
+        - Example :
+            <h1 id="top"> Film-Making Terms </h1>
+            <p> <a href = "#top" > Top </a> </p>
+
+    2.3. Links to specific section of other page : 
+        - To link to a specific part of a different page (your own site or different website) you can use a similar technique.
+        - Other page should have id attributes that identify specific parts of the page.
+        - Therefore, the href attribute will contain the address for the page (either an absolute URL or a relative URL), followed by # symbol, followed by the value of the id attribute that is used on the element you are linking to.
+        -Example, <a href="http:/www.htmlandcssbookcom/#bottom">
+
+    2.4. Target attribute in <a> anchor tag : 
+        a) <a href="https://google.com" target="_main"> Google </a>.  "_main", "_blank" opens link in new tab.
+            Generally avoid opening links in a new window, but if you do, it is considered good practice to inform users that the link will open a new window before they click on it.
+        b) <a href="https://google.com"> <img src="link"> </a>,   image tag inside anchor tag, makes clickable picture
     
-    Target attribute in <a> anchor tag : 
-    a) <a href="https://google.com" target="_main"> Google </a>.  "_main", "_blank" opens link in new tab.
-    b) <a href="https://google.com"> <img src="link"> </a>,   image tag inside anchor tag, makes clickable picture
+    2.5. mailto : To create a link that starts up the user's email program and addresses an email to a specified email address, you use href attribute starts with mailto: and is followed by the email address.
+        E.g., <a href="mailto:jon@example.org"> Email Jon </a>
+    
+    - When you link to a different website, value of href attribute will be the full web address for the site, which is known as an absolute URL.
+    - An absolute URL (Uniform Resource Locator) starts with the domain name for that site, and can be followed by the path to a specific page. If no page is specified, the site will display the homepage.
+    - Relative URL : USed when linking to other pages within the same site, no need to specify the domain name in the URL.
+    - If all the pages of the site are in the same folder, then the value of the href attribute is just the name of the file.
+    - If you have different pages of a site in different folders, then you can use a slightly more complex syntax to indicate where the page is in relation to the current page.
 
-3. Div Tag : It is a container used to store other tags, so it doesn't have it's specific work, so it's non sematic tag. It is a Block Element and takes full width of web page.
+    - Folders on a website are sometimes referred to as directories
+    - Every page and every image on a website has a URL. The URL is made up of the domain name followed by the path to that page or image
+    - Relative Links : Go to image relative_links.png in the same folder
 
-4. <strong> vs <b> : Strong is semantic (i.e., it has meaning). While <b> was used in earlier times and is non-semantic.
-    <em> vs <i> : em or emphasize is semantic and italic is old and non-semantic.
+--------------------------------------------------------------------------------------------------------------------------------------
 
-5. <image src =""> </image> == <image src="" /> (add forward slash to avoid writing image closing tag)
-        Attributes : - alt : to specify tooltip for image
-                     - width, height, 
+3. TEXT EDITING :  
 
-6. <nav> <a> </a> </nav> : Include all the main top links in <nav> tag. It creates a invisible box and group the links.
-        Attributes : 
+    3.1. <strong> vs <b> : Strong is semantic (i.e., it has meaning). While <b> was used in earlier times and is non-semantic.
+        <em> vs <i> : em or emphasize is semantic and italic is old and non-semantic.
+    3.2. Superscript <sup> : suffixes of dates or mathematical concepts like raising a number to a power such 
+        Subscript <sub>   : commonly used with foot notes or chemical formulas such as H20 
 
-7. <article> </article> : Used in blog-pages, content related sites.
-8. <header> </header> : To inclde header parts like heading, nav-bar etc
-9. <footer> </footer> : use &copy; to write copyright symbol (c inside circle)
+    3.3. <br /> : To add a line break inside the middle of a paragraph
+    3.4. <hr /> : To create a break between themes — such as a change of topic in a book or a new scene in a play — you can add a horizontal rule between sections 
 
-10. <aside> </aside> : is usually used for some secondary information that compliments the information in the main part of the page.
+    3.5. Quotaions :
+        a) <blockquote> : The <blockquote> element is used for longer quotes that take up an entire paragraph. 
+                        - Note how the <p> element is still used inside the <blockquote> element. 
+                        - Browsers tend to indent the contents of the <blockquote> element, however you should not use this element just to indent a piece of text — rather you should achieve this effect using CSS.
+        b) <q> : Used for shorter quotes that sit within a paragraph. Browsers are supposed to put quotes around the <q> element, however Internet Explorer does not — therefore many people avoid using the <q> element.
 
-11. Lists : <ol> or <ul> for ordered or unordered list. <li> for list items
-    Attributes : - type : to define the type of list icon (circle, square, roman, alphabat)
-                 - start : used in ordered list to start list from some other value
+        Attributes : Both elements may use 'cite' attribute to indicate where the quote is from. Its value should be a URL that will have more information about the source of the quotation.
+        Example : 
+        <blockquote cite="http://en.wikipedia.org/wiki/Winnie-the-Pooh">
+            <p>Did you ever stop to think, and forget to start again?</p>
+        </blockquote>
+        <p>As A.A. Milne said, 
+            <q> Some people talk to  animals. Not many listen though. That's the  problem. </q>
+        </p>
+        
+    3.6. Abbreviations & Acronyms <abbr> :
+            - A title attribute on the opening tag is used to specify the full term.
+            - In HTML 4 there was a separate <acronym> element for acronyms. To spell out the full form of the acronym, the title attribute was used (as with the <abbr> element above). HTML5 just uses the <abbr> element for both abbreviations and acronyms
+        
+        Example : 
+        <p>
+            <abbr title="Professor"> Prof </abbr> Stephen Hawking is a theoretical physicist and cosmologist.</p>
+            <p> <acronym title="National Aeronautics and Space  Administration"> NASA </acronym> do some crazy  space stuff.
+        </p>
+        
+        - When mouse is hovered over the word cointaing <abbr> the data entered in title pops up.
 
-12. <button> </button> : to create button
+    3.7. Citations <cite> & Definitions <dfn> : 
+            - <cite> element can be used to indicate where the citation is from, when you are referencing a piece of work such as a book, film or research paper.
+                In HTML5, <cite> should not really be used for a person's name — but it was allowed in HTML 4, so most people are likely to continue to use it.
+                Browsers will render the content of a <cite> element in italics.
+            - The first time you explain some new terminology (perhaps an academic concept or some jargon) in a document, it is known as the defining instance of it.
+                The <dfn> element is used to indicate the defining instance of a new term. 
+                Some browsers show the content of the <dfn> element in italics. Safari and Chrome do not change its appearance
 
-13. 
+        Example : 
+            <p> <cite> A Brief History of Time </cite> by Stephen  Hawking has sold over ten million copies worldwide. </p>
+            <p> A <dfn> black hole </dfn> is a region of space from which nothing, not even light, can escape. </p>
+
+    3.8. Author Details <address> :
+            - This element has quite a specific use: to contain contact details for the author of the page
+            - It may also contain a just a phone number or email address only. 
+            - Browsers often display the content of the <address> element in italics.
+            - You may also be interested in something called the hCard microformat for adding physical address information to your markup.
+            - Online extra : You can find out more about hCards on the website accompanying this book.
+
+    3.9. Changes to content <ins>, <del>, <s>:
+            - <ins> element can be used to show content that has been inserted into a document, while <del> element can show text that has been deleted from it.
+                The content of a <ins> element is usually underlined, while the content of a <del> element usually has a line through it
+            - <s> element indicates something that is no longer accurate or relevant (but that should not be deleted). Visually the content of an <s> element will usually be displayed with a line through the center. 
+            - Older versions of HTML had a <u> element for content that was underlined, but this is being phased out
+
+        Example :
+            <p> It was the <del> worst</del> <ins> best </ins> idea she had ever had. </p>
+            <p> Laptop computer: </p>
+            <p> <s>Was $995 </s> </p>
+            <p> Now only $375 </p>
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+4. BEUTIFYING TEXT 
+    4.1. Div <div> : It is a container used to store other tags, so it doesn't have it's specific work, so it's non sematic tag. It is a Block Element and takes full width of web page.
+
+    4.2. <nav> <a> </a> </nav> : Include all the main top links in <nav> tag. It creates a invisible box and group the links.
+            Attributes : 
+
+    4.3. <article> </article> : Used in blog-pages, content related sites.
+    4.5. <header> </header> : To inclde header parts like heading, nav-bar etc
+    4.6. <footer> </footer> : use &copy; to write copyright symbol (c inside circle)
+
+    4.7. <aside> </aside> : is usually used for some secondary information that compliments the information in the main part of the page.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+5. IMAGES :
+    5.1. <image src =""> </image> == <image src="" /> (add forward slash to avoid writing image closing tag)
+            Attributes : - alt : to specify tooltip for image
+                        - width, height, 
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+6. Lists :
+    6.1.  Three types : <ol> for ordered, <ul> for unordered list . <li> for list items
+            - <dl> for Definition lists. The definition list is created with the <dl> element and usually consists of a series of terms and their definitions.
+                Inside the <dl> element you will usually see pairs of <dt> and <dd> elements.
+                <dt> : This is used to contain the term being defined (the definition term).
+                <dd> : This is used to contain the definition.
+        - E.g. 
+            <dl>
+                <dt> Sashimi </dt>
+                    <dd> Sliced raw fish that is served with condiments such as shredded daikon radish or ginger root, wasabi and soy sauce </dd>
+                <dt> Scale </dt>
+                    <dd> A device used to accurately measure the weight of ingredients </dd>
+                    <dd> A technique by which the scales are removed from the skin of a fish </dd>
+                <dt> Scamorze </dt>
+                <dt> Scamorzo</dt>
+                    <dd> An Italian cheese usually made from whole cow's milk (although it was traditionally made from buffalo milk) </dd>
+            </dl>
+
+    6.2 Attributes : - type : to define the type of list icon (circle, square, roman, alphabat)
+                - start : used in ordered list to start list from some other value
+    -  Lists can be nested inside one another
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+7. <button> </button> : to create button
+
+
+
+8. 
+
 
 40. <div> </div> : 

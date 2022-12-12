@@ -10,3 +10,7 @@ BASIC Points :
 6. Nested comments : use <!~~ abc ~~> inside <!-- --> to make a nested comment.
 7. It is good to have only 1 H1 heading in a webpage.
 8. Try having every content of page in some element. You may use <p> for each content. Try avoiding text without having some tag.
+
+9. HTML5 allows you to use uppercase attribute names and omit the quotemarks, but this is not recommended.
+10. White space collapsing:  When the browser comes across two or more spaces next to each other, it only displays one space. Similarly if it comes across a line break, it treats that as a single space too.  
+11. 
