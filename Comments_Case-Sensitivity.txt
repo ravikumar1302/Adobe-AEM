@@ -1,0 +1,52 @@
+
+Comment in different Tech Stacks :
+
+1. Programming Languages :
+    a) C++ : 
+        Single line = // text 
+        Multiple line = /* text */
+    
+    b) JAVA :
+    c) JS : 
+
+2. Front-End
+    a) HTML : <!-- text -->
+    b) CSS : /* text */
+    c) JS : //
+
+3. Database
+    a) SQL : 
+        Single line = -- text
+        Multiple line =   /* text */
+    b) 
+
+4. Back-End
+    a) 
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Case-Sensitivity in different Tech Stacks :
+
+1. Programming Languages :
+    a) C++ : Sensative (written in Lower-case mostly)
+    b) JAVA : Sensative
+    c) JS : 
+
+2. Front-End
+    a) HTML : In-sensitive
+        X-HTML : Sensitive
+    b) CSS : Sensitive & In-sensitive Both (see below)
+    c) JS : Sensative
+
+3. Database
+    a) SQL : In-sensitive (but write in Upper-case)
+    b) 
+
+4. Back-End
+    a) 
+
+
+Exceptions :
+    1. CSS selectors are generally case-insensitive, this includes class and ID selectors. So, CSS properties, values, pseudo class names, pseudo element names, element names are case INsensitive. 
+        - But HTML class names are case-sensitive. And CSS class, id , urls, font-families are case sensitive.
+    2. 
