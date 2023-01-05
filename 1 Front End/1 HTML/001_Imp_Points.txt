@@ -15,3 +15,5 @@ BASIC Points :
 10. White space collapsing:  When the browser comes across two or more spaces next to each other, it only displays one space. Similarly if it comes across a line break, it treats that as a single space too.  
 11. Older browsers that do not understand HTML5 elements simply ignore the new elements and display the content of them.
 12. Tags are called as elements. e.g. <p> tag or <p> elements
+
+13. 

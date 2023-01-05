@@ -1,3 +1,4 @@
 
-1. MDN DOCS (Cointaisn many languages) :https://developer.mozilla.org/en-US/docs/Web/HTML
-2. 
+1. MDN DOCS (Cointaisn many languages) : https://developer.mozilla.org/en-US/docs/Web/HTML
+2. To learn JavaScript refer : https://www.rithmschool.com/courses/javascript
+3. 
