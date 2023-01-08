@@ -166,7 +166,7 @@
             Scalable Vector Graphics (SVG) are a relatively new format used to display vector images directly on the web (eliminating the need to create bitmap versions of them), however its use is not yet widespread
     
     5.6. HTML5: Figure and Figure Caption
-        - <figure> : containS images and their caption so that the two are associated. iT can have more than 1 image inside tag as long as they all share the same caption.
+        - <figure> : contains images and their caption so that the two are associated. It can have more than 1 image inside tag as long as they all share the same caption.
         - <figcaption> : It allows web page authors to add a caption to an image. Before these tags, there was no way to associate an <img> tag with its caption
         - Example : <figure> 
                         <img src="images/abc.jpg" alt="ABC pic">
@@ -197,7 +197,7 @@
             </dl>
 
     6.2 Attributes : - type : to define the type of list icon (circle, square, roman, alphabat)
-                - start : used in ordered list to start list from some other value
+                     - start : used in ordered list to start list from some other value
     -  Lists can be nested inside one another
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -218,7 +218,6 @@
     7.3. ATTRIBUTES :
         a) Spanning Columns (colspan="value") : Used to sctretch the entries in a table in more than one COLUMN.
                              - used with <th> or <td> tag and indicates how many columns that cell should run across.
-                             -
 
         b) Spanning Rows (rowspan = "value") : Used to sctretch the entries in a table in more than one ROW.
                             - used on a <th> or <td> tag to indicate how many rows a cell should span down the table
@@ -235,7 +234,6 @@
                     The opening <table> tag could also use the cellpadding attribute to add space inside each cell of the table, and the cellspacing attribute to create space between each cell of the table. The values are in pixels.
             - Border & Background : Was used on both the <table> and <td> tags to indicate the width of the border in pixels. The bgcolor attribute was used to indicate background colors of either the entire table or individual table cells. The value is usually a hex code
             - NOTE : When building a new website you should use CSS to control the appearance of the table rather than these attributes. 
-
 
 
     7.4. LONG TABLES : USe <thead>, <tbody>, <tfoot> : help distinguish between the main content of the table and the first and last rows (which can contain different content).
@@ -273,7 +271,7 @@
     8.3. Form Structure Attributes: 
         a) action : value of the URL for the page on the server that will receive the information in the form when it is submitted. Every <form> tag requires an action attribute.
         b) method : Forms can be sent using one of two methods: get or post
-            - get : the values from the form are added to the end of the URL specified in the action attribute. The getmethod is ideal for:
+            - get : the values from the form are added to the end of the URL specified in the action attribute. The get method is ideal for:
                 ● short forms (such as search boxes)
                 ● when you are just retrieving data from the web server (not sending information that should be added to or deleted from a database)
             - post :  the values are sent in what are known as HTTP headers. Use the post method if your form:

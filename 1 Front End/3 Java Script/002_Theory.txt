@@ -5,6 +5,10 @@ Main Topics : Clousers, Prototype, Event Loop, Async Await,
 
 0. file Extension : file_name.js
 0.1 JS is Case-Sensetive
+
+JavaScript is a programming language that is essential for web development. Any web page you interact with today, JavaScript is most likely providing the action on the page. JavaScript can be used to change the status of a button when it is clicked on, create a chat window at the bottom of your screen, or even create a web-based game. 
+With modern tools like Node.js, JavaScript can now also be used to save data to a database or to create desktop applications. The applications are limitless
+
 0.2 DEFINATIONS
     JS is a High level, just in time compiled programming language (means it compiles at run time, unlike java you don't have to first compile and then run it)
     JS is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well. 
@@ -36,6 +40,8 @@ Main Topics : Clousers, Prototype, Event Loop, Async Await,
         c) JS manages this Global and nested functions Execution Context Box using Call Stack. Call Stack maintains the order of execution contexts, so Firstly global Execution Context is entered and then nested functions Execution Context
         d) Call stack has various names : Call Stack, Execution Context Stack, Program Stack, Control Stack, Runtime Stack, Machine Stack.
 
+--------------------------------------------------------------------------------------------------------------------------------------
+
 3. JS is a Synchronous, Single threaded language
     Synchronous : executes in a specific order, means firstly the first line and then the second and so on
     Single threaded : executes one command at a time like interpreter
@@ -51,3 +57,33 @@ Main Topics : Clousers, Prototype, Event Loop, Async Await,
     Also, Nodejs is a JS reuntime build on Chrome V8 JS engine for executing JS outside browser
 
 7. <script> tag is used inside HTML document to use JS. But it is recommended to make a separate file and then link it using src attribute in script tag.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+8. Primitive Data Types in Js
+
+    JavaScript has 6 primitive data types, but we'll only talk about 5 of them. Here's what they look like:
+
+    a) string - let greeting = "hello";
+    b) number - let favoriteNum = 33;
+    c) boolean - let isAwesome = true;
+    d) undefined - let foo; or let setToUndefined = undefined;
+    e) null - let empty = null;     // Null is not the same as undefined. It signifies an intentional absence of data.
+
+    JavaScript is known as a "weakly" typed language. What this means is that when you create variables and assign them to values, you do not have to specify the type of data you are working with. 
+    In statically (or strongly) typed languages, like Java and C++, you do need to specify the type like int, string, char
+
+    e.g.,
+        let c = Math.sqrt(a * a + b * b);
+        
+        Any variable that is created in JavaScript that is not assigned a value is undefined: let noValue;  // The value here will be undefined
+        You can also explicitly set a variable to undefined: let favoriteFood = undefined;
+
+
+9. 
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+10. 
