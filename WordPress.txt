@@ -13,8 +13,11 @@
     a) It is used to make website without any coding, or very less coding for certain extra features
     b) Making website is free, but getting domain name and hosting is paid service
     c) Two ways to use : 
-        - Local Host : Using XAMPP software, making it on PC, hosting it local on PC like Github, then when you have money, host it on internet.
-            But as this local hosting is not real hosting, we have to intall this 3rd party application to simulate, it sometime not work properly
+        - Local Host : Using XAMPP software or localwp.com, making it on PC, hosting it local on PC like Github, then when you have money, host it on internet.
+            - But as this local hosting-XAMPP is not real hosting, we have to intall this 3rd party application to simulate, it sometime not work properly
+            - On the other hand, localwp installs a bigger 500MB software, but the UI & performance is better than XAMPP
+            - I will recommend localwp.com software, bcz it was looking much cooler and easy than XAMPP
+
         - Web Host : Using any hosting website, after buying hosting and domain, the website shows option of Wordpress, install and make a website
     d) Use themes and plugins
     e) Use Elementor-plugin to make a website using Drag-Drop
