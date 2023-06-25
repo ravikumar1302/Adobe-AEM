@@ -37,4 +37,7 @@ BASIC Points :
         These examples also illustrate a common convention when writing JavaScript: when declaring variables using multiple words, the standard is to capitalize each word after the first word, and otherwise use lower-case letters (e.g. firstName, NOT firstname, first_name, FirstName, or some other variation). 
         This casing convention is called camel case, and while your JavaScript code will work just fine if you don't abide by this convention, it's good to get in the habit of camel casing your variables.
 
-3. 
+3. Js is used both in frontend and backend
+4. In a car, HTML is structure/ metallic body. CSS is color/ designs. Js is brain/engine
+5. JS is a high-level dynamic interpreted programming language, that allows client-side scripting to create completely dynamic web applications and websites.
+6. 

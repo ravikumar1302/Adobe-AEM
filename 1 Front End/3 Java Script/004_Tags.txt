@@ -1,6 +1,6 @@
 
 
-1. alert(" ") : to print a alert message when the site opens
+1. alert(" ") : to print a alert message when the site opens. Generally, avoided these days.
 2. prompt(" " ) : to take input from user in the alert section
 3. console.log() : writes data to the console. (To see consnole data, right click and select inspect, then click on console option to see the input)
 
