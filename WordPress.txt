@@ -9,11 +9,13 @@
 	- Kitappa.com for already made kits (but it's paid)
 	- flaticon.com for vector and animated icons
 	- logomakr.com for logo
+    - site.com/wp-admin to log in to your website
 
     a) It is used to make website without any coding, or very less coding for certain extra features
     b) Making website is free, but getting domain name and hosting is paid service
     c) Two ways to use : 
         - Local Host : Using XAMPP software or localwp.com, making it on PC, hosting it local on PC like Github, then when you have money, host it on internet.
+            - https://wpcoursetools.com/ : visit this website once for local hosting, here localwp.com is mentioned and also we can check availibility of domain name in free
             - But as this local hosting-XAMPP is not real hosting, we have to intall this 3rd party application to simulate, it sometime not work properly
             - On the other hand, localwp installs a bigger 500MB software, but the UI & performance is better than XAMPP
             - I will recommend localwp.com software, bcz it was looking much cooler and easy than XAMPP
