@@ -10,6 +10,8 @@
 	- flaticon.com for vector and animated icons
 	- logomakr.com for logo
     - site.com/wp-admin to log in to your website
+    - kadence & Astra (prefer kadence) : go to these website for theme and templatet download in free (or install theme in wordpress, then while activating select template), they are already well coded for responsivenes, speed etc and are very popular and have many templates
+    - themeforest.net for paid themes
 
     a) It is used to make website without any coding, or very less coding for certain extra features
     b) Making website is free, but getting domain name and hosting is paid service
@@ -24,3 +26,10 @@
     d) Use themes and plugins
     e) Use Elementor-plugin to make a website using Drag-Drop
     f) Using elementor, you can make from scratch or by modifying any existing theme 
+    g) yoast SEO plugin : for SEO related analyisis and help
+    h) Site kit by google plugin : for google analyisis, ad sense, 
+    i) Woo commerce plugin (by wordpress official) : for e-commerce websites, it has in built templates and features needeed for e-commerce websites
+    j) wordfence security-firewall and malware scan plugin :  for security checks
+    k) UpdraftPlus wordpress backup plugin : for backup of website in case of site crash, it automatically backups database and file based on setting you selected
+    l) All in one WP Migration : used when website is created on local PC without hosting, so that the website can be hosted. Use this same plugin to export from PC or Import from PC
+    m) 
