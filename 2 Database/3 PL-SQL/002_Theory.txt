@@ -1,0 +1,15 @@
+BASIC HTML THEORY :
+PL-SQL was invented by Oracle (along with JAVA and MY SQL) in 
+
+0. file Extension : 
+1. It stands for Procedural Language - SQL
+
+2. Basic Syntax : 
+    DECLARE
+        msg varchar2(20) := 'Ram Ram Ji';
+    BEGIN
+        dbms_output.put_line(msg);
+    EXCEPTION
+    END;
+
+    - Semicolon is optional, depending on the software.

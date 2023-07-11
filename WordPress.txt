@@ -5,7 +5,7 @@
     c) Wordpress.com
 
 2. Wordpress : 
-	- Wordpress for coding less website and Hostinger for hosting it. 
+	- Wordpress for coding less website and Hostinger for hosting it. (other hosting platform is bluehost)
 	- Kitappa.com for already made kits (but it's paid)
 	- flaticon.com for vector and animated icons
 	- logomakr.com for logo

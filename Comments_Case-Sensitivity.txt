@@ -15,7 +15,7 @@ Comment in different Tech Stacks :
     c) JS : //
 
 3. Database
-    a) SQL : 
+    a) SQL, PL-SQL : 
         Single line = -- text
         Multiple line =   /* text */
     b) 
