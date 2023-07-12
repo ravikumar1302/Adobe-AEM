@@ -39,7 +39,7 @@ Case-Sensitivity in different Tech Stacks :
     c) JS : Sensative
 
 3. Database
-    a) SQL : In-sensitive (but write in Upper-case)
+    a) SQL, PL-SQL : In-sensitive (but write in Upper-case)
     b) 
 
 4. Back-End
