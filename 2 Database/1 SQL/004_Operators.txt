@@ -48,6 +48,9 @@
                More generalized syntax : SELECT * FROM <table_name> WHERE <condition> ORDER BY <column_name> LIMIT 0, 10;
    
     k) PIPE : SELECT * FROM emp WHERE deptno=20 || deptno=30;   in place of OR we used ||. This is called PIPE operator
+    l) substitution variable : &x
+        - Using this '&' we can take input from user
+        - Remember while using more than one x, use different variable, like &x &y &z
 
 --------------------------------------------------------------------------------------------------------------------------------------
 

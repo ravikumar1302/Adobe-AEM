@@ -16,3 +16,10 @@ BASIC Points :
     - It supoorts OOP
     - It supports development of web applications and server pages
     - It alows sending entire block of statements to database at one time, unlike SQL which allows online 1 line to execute at a time
+
+    - Various data obkects created with PL-SQL : 
+        - Procedures : Produres are not supoosed to return any value
+        - Functions : Functions are supoosed to return any value
+        - Packages : Combination of specification (Exposed) + Body (Hidden) Part
+        - Triggers : 3 type : Before, After, Instead of
+        - 

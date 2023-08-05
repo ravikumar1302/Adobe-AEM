@@ -2,17 +2,24 @@ BASIC HTML THEORY :
 PL-SQL was invented by Oracle (along with JAVA and MY SQL) in 
 
 0. file Extension : 
-1. It stands for Procedural Language - SQL
+1. It stands for Procedural Language extension - SQL
+    - Oracle SQL developer Software can be used for this
 
 2. Basic Syntax : 
-    DECLARE
+    DECLARE (optional)
+        // variables, cursors, procesures, functions, triggers, assertion, user-defined exceptions etc
+        // variable_name datatype(size);
         msg varchar2(20) := 'Ram Ram Ji';
-    BEGIN
+    BEGIN (mandatory)
+        // SQL statements, control structures, Pl/SQL statements etc
         dbms_output.put_line(msg);
-    EXCEPTION
-    END;
+    EXCEPTION (optional)
+        // Exception handling statements
+        // There are user defined exxceptions also, and pre-defined also (around 30-40 are also there like data type mismatch, divide by 0 etc)
+    END; (mandatory)
     /   -- This forward slash means, execute the block
-    - Semicolon is optional, depending on the software.
+    - Semicolon is optional, depending on the software
+    - Begin section can't be left empty, write NULL; if nothing to write
 
 3. Data Types :
     a) Scalar : Single values with no internal components such as a NUMBER, DATE or BOOLEAN
@@ -26,6 +33,7 @@ PL-SQL was invented by Oracle (along with JAVA and MY SQL) in
     b) Large OBject (LOB) : Pointers to large objects athat are stored separately from other data items, such as text, graphic images, video clips and sound waveforms
     c) Composite : Data items that have internal components that can be accesses individually, e.g., collections and records
     d) Reference : Pointers to other data items
+    - PL-SQL don't allow multiple varable declarations in one line, declare each one of them in different line
 
 4. User-Defined Subtypes :
     - Subtype is a subset of another data type, which is called its base type
@@ -44,10 +52,25 @@ PL-SQL was invented by Oracle (along with JAVA and MY SQL) in
         /
 
 5. Declaring variables : variable_name [CONSTANT] datatype [NOT NULL] [:= | DEFAULT initial_value]
+    - Naming Rules : must be less than 31 character; Must begin either with lower or uppercase; and is case-insensitive, means v_name and V_NAME are same
     - sales number(10,2);   // The 2 here means the no of values after decimals
     - pi CONSTANT double precision := 3,14;
     - name varchar2(25);
     - sales number := 4; OR sales number DEFAULT 4;     // Both are same
+
+    a) Variable Anchor : 
+        - It referes to use of %TYPE keyword to declare a varaible with the data type is associated with a column's data type of a particular column in a table
+        - eg, in Declare section write : variable_name table_name.column_name%TYPE; to copy the type of that column variable in your variable
+
+    b) SELECT-INTO
+        - It is used to assign a value to a variable
+        - The INTO clause moves values from SELECT query's column list into coreesponding PL/SQL variables
+        -  e.g. in BEGIN section write : SELECT column(s) INTO variables FROM table_name [condition];
+    
+    c) Constant variables :
+        - e.g. in Declare section write : variable_name CONSTANT dta_type := value;
+        - or in Declare section write : variable_name CONSTANT dta_type(size);
+            then in BEGIN write : variable_name := value;
 
 6. Local vs Global variables : 
     DECLARE
@@ -79,10 +102,10 @@ PL-SQL was invented by Oracle (along with JAVA and MY SQL) in
             dbms_output.put_line('Customer' ||c_name || 'from' || c_addr);
         END 
 
-8. PL-SQL Conditions : 
+8. PL-SQL Conditions : (It is also called controlled structures) 
     a) IF-THEN : 
         IF (a<=20) THEN     // all these conditions are written inside BEGIN
-            c := c+1;
+            c := c+1;       // Write either expressions or SQL statements
         END IF;
     b) IF-THEN-ELSE :
         IF (a<=20) THEN
@@ -110,7 +133,7 @@ PL-SQL was invented by Oracle (along with JAVA and MY SQL) in
                 else dbms_output.put_line('Failed');        // default case
             END CASE;
         END
-    e) searched CASE : there is selector in wach case
+    e) Searched CASE : there is selector in wach case
         DECLARE
             var char(1) := 'A';
         BEGIN
@@ -132,7 +155,7 @@ PL-SQL was invented by Oracle (along with JAVA and MY SQL) in
             Loop
                 x := x+10;
                 IF x>50 THEN
-                    exit;       // we can also write : exit WHEN (x > 50);
+                    EXIT;       // we can also write : EXIT WHEN (x > 50);  this is better way
                 END IF;     
             END LOOP;
         END
@@ -140,7 +163,8 @@ PL-SQL was invented by Oracle (along with JAVA and MY SQL) in
         DECLARE
             var number := 10;
         BEGIN
-            WHILE a< 20 LOOP
+            WHILE a< 20 
+            LOOP
                 a := a+2;     
             END LOOP;
         END
@@ -148,7 +172,8 @@ PL-SQL was invented by Oracle (along with JAVA and MY SQL) in
         DECLARE
             var number := 10;
         BEGIN
-            FOR a in 10 .. 20 LOOP
+            FOR a in 10 .. 20 
+            LOOP
                 a := a+2;     
             END LOOP;
         END
@@ -156,7 +181,7 @@ PL-SQL was invented by Oracle (along with JAVA and MY SQL) in
 
     - Loop Contol statemens : EXIT, CONTINUE, GOTO
 
-10. Pl-SQL Arrays : 
+10. PL-SQL Arrays : 
     - called as VARRAY
     - In Oracle environment, the starting index for varrays is always 1
     - varraays are 1-D arrays
@@ -181,7 +206,8 @@ PL-SQL was invented by Oracle (along with JAVA and MY SQL) in
         END
 
 
-11. PROCEDURES : 
+11. PROCEDURES / stored procedure: 
+    - PL/SQL stored procedure is a subprogram that perofrms a particular task to avoid repedtead task to be done manually, these subprograms are combined to form a larger programs
     - it is a block which performs one pr more specific tasks. Procedure contains header and body.
     - Header : contains name and parameters or varaibles passed to Procedure
     - Body : contains a declaration, execution & exception section nsimilar to general PL-SQL block
@@ -191,7 +217,7 @@ PL-SQL was invented by Oracle (along with JAVA and MY SQL) in
 
             // Procedure code : 
             CREATE or REPLACE PROCEDURE "insertuser" (id IN NUMBMER, name IN VARCHAR2)
-            IS
+            IS      // IS or AS : 2 ways
             BEGIN
                 INSERT INTO user VALUES (id, name);
             END ;
@@ -202,12 +228,13 @@ PL-SQL was invented by Oracle (along with JAVA and MY SQL) in
                 dbms_output.put_line('record inserted successfully');
             END;
             /
+        - Now you can call the procedure using : EXECUTE insertuser OR using : BEGIN insertuser END; /
 
 12. FUNCTIONS : It must always return a value (main diff b/w function and procedure)
     - AS keyword is used instead of IS keyword for creating a standalone function
     -   CREATE or REPLACE FUNCTION adder (n1 IN NUMBMER, n2 IN NUMBER)
-        RETURN number
-        IS
+        RETURN number       // RETURN return_type
+        IS      // IS or AS
         n3 number(8);
         BEGIN
             n3 := n1 + n2;
@@ -255,3 +282,24 @@ PL-SQL was invented by Oracle (along with JAVA and MY SQL) in
                 END LOOP;
                 CLOSE c_sutomers;
             END
+
+14. TRIGGERS :
+    - The PL/SQL triggers are IMPLICITLY executed when INSERT, UPDATE or DELETE statement is performed
+    - Syntax :
+        CREATE [OR REPLACE] TRIGGER trigger_name
+        BEFORE [OR AFTER OR INSTEAD OF] INSERT [OR UPDATE OR DELETE]
+        ON table_name
+        [REFERENCING OLD AS o NEW AS n]
+        [FOR EACH ROW]
+
+        DELARE 
+            declaration section
+        BEGIN
+            sequence of statements
+        END;
+        /
+    
+    - After : Like after transaction we get message and mail from bank
+    - Instead of : if-else case or as the name suggests 
+
+15. 
