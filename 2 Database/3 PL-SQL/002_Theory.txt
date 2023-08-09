@@ -133,7 +133,7 @@ PL-SQL was invented by Oracle (along with JAVA and MY SQL) in
                 else dbms_output.put_line('Failed');        // default case
             END CASE;
         END
-    e) Searched CASE : there is selector in wach case
+    e) Searched CASE : there is selector in each case
         DECLARE
             var char(1) := 'A';
         BEGIN
@@ -147,24 +147,22 @@ PL-SQL was invented by Oracle (along with JAVA and MY SQL) in
         END
     f) nested IF-THEN-ELSE : 
 
-9. Loops : 
+9. Loops : Basic, While and For loop
     a) Basic LOOP : made usingif-then 
         DECLARE
             var number := 10;
         BEGIN
             Loop
                 x := x+10;
-                IF x>50 THEN
-                    EXIT;       // we can also write : EXIT WHEN (x > 50);  this is better way
-                END IF;     
+                // statements
+                EXIT WHEN (x > 50);     // we can also write :  IF x>50 THEN EXIT;  END IF;   
             END LOOP;
         END
     b) WHILE LOOP : 
         DECLARE
             var number := 10;
         BEGIN
-            WHILE a< 20 
-            LOOP
+            WHILE a< 20 LOOP
                 a := a+2;     
             END LOOP;
         END
@@ -172,11 +170,13 @@ PL-SQL was invented by Oracle (along with JAVA and MY SQL) in
         DECLARE
             var number := 10;
         BEGIN
-            FOR a in 10 .. 20 
-            LOOP
+            FOR a in 10 .. 20 LOOP      // FOR a in REVERSE 10 .. 20 LOOP
                 a := a+2;     
             END LOOP;
         END
+
+        - User REVERSE keyword if you want value in reverse
+
     d) Nested loops : 
 
     - Loop Contol statemens : EXIT, CONTINUE, GOTO
@@ -302,4 +302,17 @@ PL-SQL was invented by Oracle (along with JAVA and MY SQL) in
     - After : Like after transaction we get message and mail from bank
     - Instead of : if-else case or as the name suggests 
 
-15. 
+15. Exception handling : 
+        DELARE 
+            v_lname varchar2(20);
+        BEGIN
+            sequence of statements
+        EXCEPTION
+            WHEN too_many_rows then
+            dbms_output.put_line();
+        END;
+        /
+
+        - There were more than one rows, the system shows error, use exception in that case
+
+16.  
