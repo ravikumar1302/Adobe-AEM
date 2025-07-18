@@ -1,0 +1,31 @@
+Syllabus:
+
+1. AEM Front-end & Backend Developers
+-----------------------------------
+  • AEM Architecture
+  • AEM Sling Resolution
+  • AEM Authoring
+
+2. AEM Front-End Development
+--------------------------
+  • HTML, CSS, JS & jQuery
+  • AEM HTL Templating Language
+  • Less / Sass CSS Framework
+  • Understanding on how AEM compiles CSS & JS files.
+
+  • AEM Context Hub & Personalization
+  • Angular / React Experience
+  • Angular / React State management experience.
+  • How AEM SPA Works
+
+3. AEM Back-End Development
+-------------------------
+  • AEM Project Structure
+  • Maven Dependencies Understanding
+  • AEM Custom Component Creation
+  • Sling Servlets
+  • OSGI Services
+  • Workflow Administration
+  • Content Model Creation
+
+  • Java Microservices Experience
