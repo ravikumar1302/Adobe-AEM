@@ -4,4 +4,22 @@ General Information:
 1. Content type allowed in AEM : Text, JSON, Images, PDF, PPT
 2. AEM has folder like structure. 
     e.g. Site > Languages > products > details Exception
-3.  
+
+3. CRXDE : Content Repository eXtreme Development Environment. 
+    - CRXDE is a JCR (Java Content Repository) interface. 
+    - AEM uses Apache Jackrabbit Oak, a hierarchical, node-based NoSQL content repository.
+    a) It's a web/ desktop based tool used for directly interacting with the JCR (Java Content Repository) that underpins AEM.
+    b) Two main versions: Lite (built-in, web-based) and Full IDE (Eclipse-based desktop IDE, now largely deprecated)
+
+        CRXDE Lite is accessible in a browser via: 
+            http://localhost:4502/crx/de  (Replace localhost:4502 with your AEM instance host and port)
+
+            It allows developers to:
+                - Browse and edit the JCR repository structure (/apps, /content, etc.).
+                - Create, delete, or modify nodes and properties.
+                - Upload/download files like .jsp, .xml, .html, .json, etc.
+                - Manage permissions on content nodes.
+                - View and edit component definitions and configurations.
+                - Debug issues in the repository directly (carefully).
+
+4. 
