@@ -1,4 +1,4 @@
-# AEM Learning Path (GitHub-Friendly Table Format)
+# AEM Learning Path
 
 ---
 
