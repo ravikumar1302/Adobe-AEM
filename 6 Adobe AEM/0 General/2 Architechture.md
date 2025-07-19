@@ -1,4 +1,4 @@
-# H1 Architecure
+# Architecure
 
 **1. Genreal Web Development Architecture:**
 Client (user browser) > Web server > App server > Database
