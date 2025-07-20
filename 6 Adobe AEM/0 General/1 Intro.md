@@ -33,7 +33,12 @@
     - Apache Sling (Web Application Framework): Runs on Felix; maps HTTP requests to JCR content and handles rendering.
     - Apache Jackrabbit Oak (JCR Repository / Storage Layer): Stores AEM's content and data. Felix provides its runtime environment.
     - Apache Felix (OSGi Java Container): The foundational runtime environment enabling modularity (install, start, stop, update bundles) without restarts.
-
--
-
 ```
+
+5. AEM Templates, Components, Authoring
+
+-   AEM contains a lot of templates and options to select from like Container, Progress bar, Tabs, Accordian,Text Box, Praagraph etc
+-   AEM Author Environment (CURD Page) : Changes can be done till this. After Authoring replication happens and Page is went to Publisher
+-   AEM Publish Environment : From this environment, page goes to Apache Web server and then end user
+
+6.
