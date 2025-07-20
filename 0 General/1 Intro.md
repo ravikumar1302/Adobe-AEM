@@ -69,4 +69,43 @@ Flow: User URL > CDN > Load balancer > Dispatcher > AEM Pub > AEM Author > CD > 
   - AEM instances process dynamic requests, render pages from content, execute Java code, and manage database interactions – essentially, the core application logic.
 ```
 
-7. test
+7. AEM SLING End to End Flow
+
+```
+  1. [User Request]
+      ↓
+  2. Web Browser
+      ↓
+  3. CDN (optional cache layer)
+      ↓
+  4. Web Server (httpd on port 8080)
+      ↓
+  5. OSGI Framework
+      ↓
+  6. OSGI HTTP Service (via namespace mapping)
+      ↓
+  7. Sling Bundle (Registers Sling Main Servlet)
+      ↓
+  8. Sling Main Servlet handles the request
+      ↓
+  9. Sling Bundle checks if ResourceResolverFactory is available
+      ↓
+  10. Resource Resolver Factory creates Resource Resolver
+      ↓
+  11. Resource Resolver uses the URL to find the correct Resource
+      ↓
+  12. Resource (JCR node) is resolved
+      ↓
+  13. Sling uses Resource Type for Script or Servlet Resolution
+      ↓
+  14. HTL or servlet renders the final content
+
+```
+
+8. HTL : HTML Template Language
+
+-   HTL is a templating language created by Adobe for Adobe Experience Manager (AEM). It's designed to replace JSP (JavaServer Pages) in AEM projects.
+-   Purpose: Securely bind dynamic content into HTML templates in AEM.
+-   e.g. <div data-sly-test="${user.loggedIn}">
+    Syntax is HTML-like but with dynamic elements (data-sly-\*, ${}).
+-   HTL Scripts are also processed by AEM as servlet
