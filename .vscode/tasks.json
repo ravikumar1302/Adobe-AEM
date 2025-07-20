@@ -5,14 +5,10 @@
         {
             "label": "Push AEM to Public Repo",
             "type": "shell",
-            "command": "git",
+            "command": "powershell",
             "args": [
-                "subtree",
-                "push",
-                "--prefix=6 Adobe AEM",
-                "aem-origin",
-                "main",
-                "--force"
+                "-Command",
+                "git subtree split --prefix='6 Adobe AEM' -b aem-temp-branch; git push aem-origin aem-temp-branch:main --force; git branch -D aem-temp-branch"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
@@ -22,7 +18,7 @@
                 "isDefault": true
             },
             "problemMatcher": [],
-            "detail": "Force-pushes Adobe AEM folder to public GitHub repo"
+            "detail": "Force-pushes Adobe AEM folder to public GitHub repo using subtree split"
         }
     ]
 }
