@@ -11,7 +11,8 @@
                 "push",
                 "--prefix=6 Adobe AEM",
                 "aem-origin",
-                "main"
+                "main",
+                "--force"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
@@ -21,7 +22,7 @@
                 "isDefault": true
             },
             "problemMatcher": [],
-            "detail": "Pushes Adobe AEM folder to the public GitHub repo"
+            "detail": "Force-pushes Adobe AEM folder to public GitHub repo"
         }
     ]
 }
