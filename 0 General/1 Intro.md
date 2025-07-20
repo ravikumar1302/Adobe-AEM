@@ -69,4 +69,4 @@ Flow: User URL > CDN > Load balancer > Dispatcher > AEM Pub > AEM Author > CD > 
   - AEM instances process dynamic requests, render pages from content, execute Java code, and manage database interactions – essentially, the core application logic.
 ```
 
-7.
+7. test
