@@ -1,0 +1,27 @@
+// Automatiion of Saving of Adobe AEM from this Private repo to Public AEM with a VS Code Task or Script
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Push AEM to Public Repo",
+            "type": "shell",
+            "command": "git",
+            "args": [
+                "subtree",
+                "push",
+                "--prefix=6 Adobe AEM",
+                "aem-origin",
+                "main"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "Pushes Adobe AEM folder to the public GitHub repo"
+        }
+    ]
+}

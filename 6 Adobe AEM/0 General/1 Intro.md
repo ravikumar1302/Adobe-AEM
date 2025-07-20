@@ -24,6 +24,8 @@
 ```
 
 4. OSGI Container :
+   <img src="../Images/AEM_Architecture.png" alt="AEM Architecture" width="40%" style="display: block; margin: auto;">
+   <br>
 
 ```
 - OSGi is a Java framework for developing and deploying modular software programs and libraries. It allows applications to be broken into reusable, dynamic modules (called bundles), which can be independently started, stopped, updated, or removed at runtime.
@@ -36,9 +38,35 @@
 ```
 
 5. AEM Templates, Components, Authoring
+   <img src="../Images/AEM_Author_and Publish_Flow.png" alt="AEM_Author_and Publish_Flow.png" width="40%" style="display: block; margin: auto;">
+   <br>
 
 -   AEM contains a lot of templates and options to select from like Container, Progress bar, Tabs, Accordian,Text Box, Praagraph etc
 -   AEM Author Environment (CURD Page) : Changes can be done till this. After Authoring replication happens and Page is went to Publisher
 -   AEM Publish Environment : From this environment, page goes to Apache Web server and then end user
 
-6.
+6. AEM Page Render Flow
+
+Flow: User URL > CDN > Load balancer > Dispatcher > AEM Pub > AEM Author > CD > Developer
+<img src="../Images/AEM_Page_Render_Flow.png" alt="AEM_Page_Render_Flow.png" width="40%" style="display: block; margin: auto;">
+<br>
+
+```
+- CDN (Content Delivery Network): Caches static content geographically closer to users, speeding up delivery and reducing server load.
+- Load Balancer: Distributes user requests among multiple servers for performance and reliability.
+- Dispatcher: Caches AEM content, balances requests to AEM Publish instances and manage security (first line of defense for AEM).
+- AEM Pub (Publish Instance): Serves published website content to end-users.
+- AEM Author (Author Instance): Used by authors to create and manage website content.
+- CD (Code Deployment): The process of deploying application code (from developers) to AEM instances.
+
+- Web Server Functionality: The Dispatcher acts as a web server (typically an Apache HTTP Server with the AEM Dispatcher module). Its primary roles are to:
+  - Serve static content directly from its cache.
+  - Proxy requests for dynamic content to the AEM Publish instances.
+  - Handle URL rewriting, vanity URLs, and other web server-level tasks.
+
+- Application Server Functionality: The AEM Pub (Publish) and AEM Author instances inherently provide the application server functionality.
+  - AEM is a Java web application. It uses an embedded servlet engine (e.g., Jetty) or can deploy on external ones (e.g., Tomcat).
+  - AEM instances process dynamic requests, render pages from content, execute Java code, and manage database interactions – essentially, the core application logic.
+```
+
+7.
