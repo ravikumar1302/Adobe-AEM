@@ -9,7 +9,8 @@
 
 ```
 - CRXDE is a JCR (Java Content Repository) interface.
-- AEM uses Apache Jackrabbit Oak, a hierarchical, node-based NoSQL content repository that underpins AEM.
+- JCR is a file system, which contains both actual code and properties file
+- AEM uses Apache Jackrabbit Oak, a hierarchical, node-based "NoSQL" content repository that underpins AEM.
   - It's a web/desktop-based tool used for directly interacting with the JCR (Java Content Repository).
   - Two main versions: Lite (built-in, web-based) and Full IDE (Eclipse-based desktop IDE, now largely deprecated)
   - CRXDE Lite is accessible in a browser via: http://localhost:4502/crx/de - (Replace localhost:4502 with your AEM instance host and port)
@@ -22,4 +23,4 @@
     - Debug issues in the repository directly (carefully)
 ```
 
-4. _(continue other points here if needed)_
+4.
