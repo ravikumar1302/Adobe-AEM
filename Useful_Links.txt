@@ -4,3 +4,7 @@
         - https://www.rithmschool.com/courses/javascript
         - https://javascript.info/
 3. 
+
+
+// For saving Adobe AEM to public repo run : 
+                                        git subtree push --prefix="6 Adobe AEM" adobe-aem main
