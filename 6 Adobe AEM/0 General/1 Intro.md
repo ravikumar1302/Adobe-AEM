@@ -23,4 +23,17 @@
     - Debug issues in the repository directly (carefully)
 ```
 
-4.
+4. OSGI Container :
+
+```
+- OSGi is a Java framework for developing and deploying modular software programs and libraries. It allows applications to be broken into reusable, dynamic modules (called bundles), which can be independently started, stopped, updated, or removed at runtime.
+
+- AEM Architecture:
+    - AEM (Application Layer): The Adobe Experience Manager application itself; implemented as OSGi bundles running within Felix.
+    - Apache Sling (Web Application Framework): Runs on Felix; maps HTTP requests to JCR content and handles rendering.
+    - Apache Jackrabbit Oak (JCR Repository / Storage Layer): Stores AEM's content and data. Felix provides its runtime environment.
+    - Apache Felix (OSGi Java Container): The foundational runtime environment enabling modularity (install, start, stop, update bundles) without restarts.
+
+-
+
+```

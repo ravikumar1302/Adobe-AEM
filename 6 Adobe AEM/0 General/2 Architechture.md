@@ -13,4 +13,6 @@ Client (user browser) > Web server (Dispatcher) > App server (Sling Framework) >
     a) App Server : Apache Sling Framework is used. It's work is to check which JAVA class/Code to use, when this URL is called.
     b) JCR : No-SQL Database
 
-<img src="../Images/AEM_Web_Development_Architecture.png" alt="AEM Architecture" width="70%" style="display: block; margin: auto;">
+<img src="../Images/AEM_Web_Development_Architecture.png" alt="AEM Web-D Architecture" width="70%" style="display: block; margin: auto;">
+<br>
+<img src="../Images/AEM_Architecture.png" alt="AEM Architecture" width="70%" style="display: block; margin: auto;">
