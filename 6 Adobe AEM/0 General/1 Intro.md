@@ -104,8 +104,21 @@ Flow: User URL > CDN > Load balancer > Dispatcher > AEM Pub > AEM Author > CD > 
 
 8. HTL : HTML Template Language
 
--   HTL is a templating language created by Adobe for Adobe Experience Manager (AEM). It's designed to replace JSP (JavaServer Pages) in AEM projects.
+-   HTL is a templating language created by Adobe for AEM
+-   It's designed to replace JSP (JavaServer Pages) in AEM projects.
+-   In AEM, Sling Template Language (Sightly)—now known as HTL is a templating language used to build dynamic components and web pages.
 -   Purpose: Securely bind dynamic content into HTML templates in AEM.
 -   e.g. <div data-sly-test="${user.loggedIn}">
     Syntax is HTML-like but with dynamic elements (data-sly-\*, ${}).
 -   HTL Scripts are also processed by AEM as servlet
+
+9. Maven :
+   Maven is a build and dependency management tool used in AEM to compile code, manage libraries, and deploy packages to AEM instances.
+
+```
+- Project structure: Organizes AEM code (core, UI, content) using AEM Archetype.
+- Dependency management: Automatically fetches required AEM and Java libraries.
+- Build automation: Compiles Java code, creates deployable packages (.zip).
+- Deployment: Installs packages into AEM using commands like "mvn install"
+- Environment config: Supports different run modes and environments.
+```
