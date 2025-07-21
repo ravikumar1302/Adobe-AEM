@@ -41,9 +41,9 @@
    <img src="../Images/AEM_Author_and Publish_Flow.png" alt="AEM_Author_and Publish_Flow.png" width="40%" style="display: block; margin: auto;">
    <br>
 
--   AEM contains a lot of templates and options to select from like Container, Progress bar, Tabs, Accordian,Text Box, Praagraph etc
--   AEM Author Environment (CURD Page) : Changes can be done till this. After Authoring replication happens and Page is went to Publisher
--   AEM Publish Environment : From this environment, page goes to Apache Web server and then end user
+    - AEM contains a lot of templates and options to select from like Container, Progress bar, Tabs, Accordian,Text Box, Paragraph, Buttons, Breadcrumb, Carousel etc
+    - AEM Author Environment (CURD Page) : Changes can be done till this. After Authoring replication happens and Page is went to Publisher
+    - AEM Publish Environment : From this environment, page goes to Apache Web server and then end user
 
 6. AEM Page Render Flow
 
@@ -52,73 +52,78 @@ Flow: User URL > CDN > Load balancer > Dispatcher > AEM Pub > AEM Author > CD > 
 <br>
 
 ```
-- CDN (Content Delivery Network): Caches static content geographically closer to users, speeding up delivery and reducing server load.
-- Load Balancer: Distributes user requests among multiple servers for performance and reliability.
-- Dispatcher: Caches AEM content, balances requests to AEM Publish instances and manage security (first line of defense for AEM).
-- AEM Pub (Publish Instance): Serves published website content to end-users.
-- AEM Author (Author Instance): Used by authors to create and manage website content.
-- CD (Code Deployment): The process of deploying application code (from developers) to AEM instances.
+    - CDN (Content Delivery Network): Caches static content geographically closer to users, speeding up delivery and reducing server load.
+    - Load Balancer: Distributes user requests among multiple servers for performance and reliability.
+    - Dispatcher: Caches AEM content, balances requests to AEM Publish instances and manage security (first line of defense for AEM).
+    - AEM Pub (Publish Instance): Serves published website content to end-users.
+    - AEM Author (Author Instance): Used by authors to create and manage website content.
+    - CD (Code Deployment): The process of deploying application code (from developers) to AEM instances.
 
-- Web Server Functionality: The Dispatcher acts as a web server (typically an Apache HTTP Server with the AEM Dispatcher module). Its primary roles are to:
-  - Serve static content directly from its cache.
-  - Proxy requests for dynamic content to the AEM Publish instances.
-  - Handle URL rewriting, vanity URLs, and other web server-level tasks.
+    - Web Server Functionality: The Dispatcher acts as a web server (typically an Apache HTTP Server with the AEM Dispatcher module). Its primary roles are to:
+    - Serve static content directly from its cache.
+    - Proxy requests for dynamic content to the AEM Publish instances.
+    - Handle URL rewriting, vanity URLs, and other web server-level tasks.
 
-- Application Server Functionality: The AEM Pub (Publish) and AEM Author instances inherently provide the application server functionality.
-  - AEM is a Java web application. It uses an embedded servlet engine (e.g., Jetty) or can deploy on external ones (e.g., Tomcat).
-  - AEM instances process dynamic requests, render pages from content, execute Java code, and manage database interactions – essentially, the core application logic.
+    - Application Server Functionality: The AEM Pub (Publish) and AEM Author instances inherently provide the application server functionality.
+    - AEM is a Java web application. It uses an embedded servlet engine (e.g., Jetty) or can deploy on external ones (e.g., Tomcat).
+    - AEM instances process dynamic requests, render pages from content, execute Java code, and manage database interactions – essentially, the core application logic.
 ```
 
 7. AEM SLING End to End Flow
 
 ```
-  1. [User Request]
-      ↓
-  2. Web Browser
-      ↓
-  3. CDN (optional cache layer)
-      ↓
-  4. Web Server (httpd on port 8080)
-      ↓
-  5. OSGI Framework
-      ↓
-  6. OSGI HTTP Service (via namespace mapping)
-      ↓
-  7. Sling Bundle (Registers Sling Main Servlet)
-      ↓
-  8. Sling Main Servlet handles the request
-      ↓
-  9. Sling Bundle checks if ResourceResolverFactory is available
-      ↓
-  10. Resource Resolver Factory creates Resource Resolver
-      ↓
-  11. Resource Resolver uses the URL to find the correct Resource
-      ↓
-  12. Resource (JCR node) is resolved
-      ↓
-  13. Sling uses Resource Type for Script or Servlet Resolution
-      ↓
-  14. HTL or servlet renders the final content
+1. [User Request]
+   ↓
+2. Web Browser
+   ↓
+3. CDN (optional cache layer)
+   ↓
+4. Web Server (httpd on port 8080)
+   ↓
+5. OSGI Framework
+   ↓
+6. OSGI HTTP Service (via namespace mapping)
+   ↓
+7. Sling Bundle (Registers Sling Main Servlet)
+   ↓
+8. Sling Main Servlet handles the request
+   ↓
+9. Sling Bundle checks if ResourceResolverFactory is available
+   ↓
+10. Resource Resolver Factory creates Resource Resolver
+    ↓
+11. Resource Resolver uses the URL to find the correct Resource
+    ↓
+12. Resource (JCR node) is resolved
+    ↓
+13. Sling uses Resource Type for Script or Servlet Resolution
+    ↓
+14. HTL or servlet renders the final content
 
 ```
 
 8. HTL : HTML Template Language
 
--   HTL is a templating language created by Adobe for AEM
--   It's designed to replace JSP (JavaServer Pages) in AEM projects.
--   In AEM, Sling Template Language (Sightly)—now known as HTL is a templating language used to build dynamic components and web pages.
--   Purpose: Securely bind dynamic content into HTML templates in AEM.
--   e.g. <div data-sly-test="${user.loggedIn}">
-    Syntax is HTML-like but with dynamic elements (data-sly-\*, ${}).
--   HTL Scripts are also processed by AEM as servlet
+```
+    - HTL is a templating language created by Adobe for AEM
+    - It's designed to replace JSP (JavaServer Pages) in AEM projects.
+    - In AEM, Sling Template Language (Sightly)—now known as HTL is a templating language used to build dynamic components and web pages.
+    - Purpose: Securely bind dynamic content into HTML templates in AEM.
+    - e.g. <div data-sly-test="${user.loggedIn}">
+        Syntax is HTML-like but with dynamic elements (data-sly-\*, ${}).
+    - HTL Scripts are also processed by AEM as servlet
+    -
+
+```
 
 9. Maven :
    Maven is a build and dependency management tool used in AEM to compile code, manage libraries, and deploy packages to AEM instances.
 
 ```
-- Project structure: Organizes AEM code (core, UI, content) using AEM Archetype.
-- Dependency management: Automatically fetches required AEM and Java libraries.
-- Build automation: Compiles Java code, creates deployable packages (.zip).
-- Deployment: Installs packages into AEM using commands like "mvn install"
-- Environment config: Supports different run modes and environments.
+    - Project structure: Organizes AEM code (core, UI, content) using AEM Archetype.
+    - Dependency management: Automatically fetches required AEM and Java libraries.
+    - Build automation: Compiles Java code, creates deployable packages (.zip).
+    - Deployment: Installs packages into AEM using commands like "mvn install"
+    - Environment config: Supports different run modes and environments.
+
 ```
