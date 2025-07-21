@@ -109,10 +109,10 @@ Flow: User URL > CDN > Load balancer > Dispatcher > AEM Pub > AEM Author > CD > 
     - It's designed to replace JSP (JavaServer Pages) in AEM projects.
     - In AEM, Sling Template Language (Sightly)—now known as HTL is a templating language used to build dynamic components and web pages.
     - Purpose: Securely bind dynamic content into HTML templates in AEM.
-    - e.g. <div data-sly-test="${user.loggedIn}">
+    - e.g. <div data-sly-set="${variable}">
         Syntax is HTML-like but with dynamic elements (data-sly-\*, ${}).
     - HTL Scripts are also processed by AEM as servlet
-    -
+    - HTL can do : Variable Setting, If Condition, Operators, Loops, Function, Include another file, Display Context, Global Objects
 
 ```
 
