@@ -13,7 +13,7 @@
 - AEM uses Apache Jackrabbit Oak, a hierarchical, node-based "NoSQL" content repository that underpins AEM.
   - It's a web/desktop-based tool used for directly interacting with the JCR (Java Content Repository).
   - Two main versions: Lite (built-in, web-based) and Full IDE (Eclipse-based desktop IDE, now largely deprecated)
-  - CRXDE Lite is accessible in a browser via: http://localhost:4502/crx/de - (Replace localhost:4502 with your AEM instance host and port)
+  - CRXDE Lite is accessible in browser: http://localhost:4502/crx/de - (Replace localhost:4502 with your instance host & port)
   - It allows developers to:
     - Browse and edit the JCR repository structure (/apps, /content, etc.)
     - Create, delete, or modify nodes and properties
@@ -24,7 +24,7 @@
 ```
 
 4. OSGI Container :
-   <img src="../Images/AEM_Architecture.png" alt="AEM Architecture" width="40%" style="display: block; margin: auto;">
+   <br><img src="../Images/AEM_Architecture.png" alt="AEM Architecture" width="40%" style="display: block; margin: auto;">
    <br>
 
 ```
@@ -38,7 +38,7 @@
 ```
 
 5. AEM Templates, Components, Authoring
-   <img src="../Images/AEM_Author_and Publish_Flow.png" alt="AEM_Author_and Publish_Flow.png" width="40%" style="display: block; margin: auto;">
+   <br><img src="../Images/AEM_Author_and Publish_Flow.png" alt="AEM_Author_and Publish_Flow.png" width="40%" style="display: block; margin: auto;">
    <br>
 
     - AEM contains a lot of templates and options to select from like Container, Progress bar, Tabs, Accordian,Text Box, Paragraph, Buttons, Breadcrumb, Carousel etc
@@ -48,7 +48,7 @@
 6. AEM Page Render Flow
 
 Flow: User URL > CDN > Load balancer > Dispatcher > AEM Pub > AEM Author > CD > Developer
-<img src="../Images/AEM_Page_Render_Flow.png" alt="AEM_Page_Render_Flow.png" width="40%" style="display: block; margin: auto;">
+<br><img src="../Images/AEM_Page_Render_Flow.png" alt="AEM_Page_Render_Flow.png" width="40%" style="display: block; margin: auto;">
 <br>
 
 ```
