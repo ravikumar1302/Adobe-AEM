@@ -14,3 +14,4 @@
     - Resource type-based: Mapped using @SlingServletResourceTypes
 
 4. Common Use Case: Handling AJAX calls from the front end.
+5.
