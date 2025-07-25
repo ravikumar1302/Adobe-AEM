@@ -3,7 +3,7 @@
 0. AEM : Adobe Experience Manager
 1. Content type allowed in AEM : Text, JSON, Images, PDF, PPT
 2. AEM has folder like structure.  
-   e.g. Site > Languages > products > details Exception
+   e.g. Site > Languages > products > details etc.
 
 3. CRXDE : Content Repository eXtreme Development Environment.
 
