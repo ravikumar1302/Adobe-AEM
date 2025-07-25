@@ -76,7 +76,7 @@ When you download an AEM project, you’ll typically see folders like `ui.core`,
 ## 🔗 Helpful Resources
 
 -   [AEM Core Concepts (Adobe)](https://experienceleague.adobe.com/docs/experience-manager.html)
--   [HTL Documentation](https://developer.adobe.com/experience-manager/htl/)
+-   [HTL Documentation](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/overview)
 -   [CRXDE Lite](http://localhost:4502/crx/de)
 
 💡 **Tip:** Pick a simple component, change its model or HTML, and see the change live — it’s the fastest way to learn.
