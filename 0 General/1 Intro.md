@@ -62,9 +62,9 @@ Remember the Newspaper Example for this.
     - CD (Code Deployment): The process of deploying application code (from developers) to AEM instances.
 
     - Web Server Functionality: The Dispatcher acts as a web server (typically an Apache HTTP Server with the AEM Dispatcher module). Its primary roles are to:
-      - Serve static content directly from its cache.
-      - Proxy requests for dynamic content to the AEM Publish instances.
-      - Handle URL rewriting, vanity URLs, and other web server-level tasks.
+         - Serve static content directly from its cache.
+         - Proxy requests for dynamic content to the AEM Publish instances.
+         - Handle URL re-writing, vanity URLs, and other web server-level tasks.
 
     - Application Server Functionality: The AEM Pub (Publish) and AEM Author instances inherently provide the application server functionality.
     - AEM is a Java web application. It uses an embedded servlet engine (e.g., Jetty) or can deploy on external ones (e.g., Tomcat).
@@ -115,7 +115,7 @@ Remember the Newspaper Example for this.
         Syntax is HTML-like but with dynamic elements (data-sly-\*, ${}).
     - HTL Scripts are also processed by AEM as servlet
     - HTL can do : Variable Setting, If Condition, Operators, Loops, Function, Include another file, Display Context, Global Objects
-
+    - More Details on HTL in Frontend > HTL folder in this repository
 ```
 
 9. Maven :
