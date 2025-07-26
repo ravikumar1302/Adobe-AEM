@@ -3,9 +3,9 @@
 **1. Genreal Web Development Architecture:**
 Client (user browser) > Web server > App server > Database
 
-    a) If it's a static page (url.html), request gets served from Webserver.
-    b) If dynamic content is needed, then App server is also needed.
-    c) Java framewrok : Looks the URL came from client. Java, it's class etc are all stored in App server
+    a) If it's a static page (url.html), request gets served from Web server itself.
+    b) If dynamic content is needed, then Web server sends request to App server and App servers provides the content.
+    c) Java framewrok : Looks the URL that came from client. Also, Java and it's class etc are all stored in App server
 
 **2. AEM Web Development Architecture:**
 Client (user browser) > Web server (Dispatcher) > App server (Sling Framework) > Database (JCR)

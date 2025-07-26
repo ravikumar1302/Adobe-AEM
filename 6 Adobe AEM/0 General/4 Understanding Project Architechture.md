@@ -6,14 +6,14 @@ When you download an AEM project, you’ll typically see folders like `ui.core`,
 
 ## 1. Project Structure Overview
 
-| Folder             | Purpose                                            |
-| ------------------ | -------------------------------------------------- |
-| `core` / `ui.core` | Java code – Sling Models, Servlets, OSGi Services  |
-| `ui.apps`          | AEM Components, templates, dialogs, and clientlibs |
-| `ui.content`       | Site structure and pages (`/content`)              |
-| `ui.frontend`      | JS/CSS using Webpack; outputs to clientlibs        |
-| `it.tests`         | Integration test cases                             |
-| `dispatcher`       | Dispatcher config (if present)                     |
+| Folder             | Purpose                                                                                                                                      |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `core` / `ui.core` | Java code – Sling Models, Servlets, OSGi Services                                                                                            |
+| `ui.apps`          | AEM Components, templates, dialogs, and JS&CSS clientlibs                                                                                    |
+| `ui.content`       | Site structure and pages (`/content`). contains sample content using the components from the ui.apps                                         |
+| `ui.frontend`      | JS/CSS using Webpack; outputs to clientlibs. contains React components.                                                                      |
+| `it.tests`         | Integration test cases. Java bundle containing JUnit tests that are executed server-side. This bundle is not to be deployed onto production. |
+| `dispatcher`       | Dispatcher config (if present)                                                                                                               |
 
 ---
 
