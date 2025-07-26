@@ -1,6 +1,6 @@
 # What is HTL?
 
--   HTL (formerly known as Sightly) is the templating language used in Adobe Experience Manager (AEM). It lets front-end developers work with dynamic content securely and efficiently, without needing deep Java knowledge.
+-   HTL (earlier Sightly) is the templating language used in AEM. It let's front-end developers work with 'Dynamic content' securely and efficiently, without needing deep Java knowledge.
 
 | What You Know           | How HTL Builds On It                                                                                               |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------ |
@@ -11,46 +11,32 @@
 -   Example Comparison
 
 ```
-    - HTML:  <h1>Welcome, User!</h1>
-    - HTL: <h1>Welcome, ${user.name}!</h1>
+    - HTML:  <h1> Welcome, User! </h1>
+    - HTL: <h1> Welcome, ${user.name}! </h1>
     - With logic:
         <div data-sly-test="${user.loggedIn}">
-            <p>Hello, ${user.name}!</p>
+            <p> Hello, ${user.name}! </p>
         </div>
 
 ```
 
-## Key HTL Concepts to Learn (Very Basic):
+## Key HTL commands :
 
-```
-    - ${variable} – Output variables
-    - data-sly-test – Simple conditional rendering
-    - data-sly-repeat – Looping through lists
-    - data-sly-use – Linking to backend models/ Use backend Java model or JS script
-    - data-sly-unwrap – Remove wrapping tag
-    - data-sly-resource – Include a child component
-    - data-sly-include – Include a static HTL file
-    - data-sly-call and data-sly-template – Reusable templates
-    - data-sly-element – Dynamic HTML tag
-    - data-sly-list – More control over iteration
+-   Note: HTML remains intact – You’re just adding smart annotations
 
-HTML remains intact – You’re just adding smart annotations
-```
-
-📝 HTL CHEAT SHEET
-| HTL Directive | Description | Example |
-| ------------------- | -------------------------- | ------------------------------------------------------------------------------------ |
-| `${var}` | Output variable | `${title}` |
-| `data-sly-test` | Conditional rendering | `<div data-sly-test="${user.loggedIn}">Welcome</div>` |
-| `data-sly-repeat` | Loop through list | `<li data-sly-repeat.item="${items}">${item.name}</li>` |
-| `data-sly-use` | Bind model or script | `<div data-sly-use.model="com.example.Model">` |
-| `data-sly-resource` | Include child component | `<div data-sly-resource="${'hero' @ resourceType='project/components/hero'}"></div>` |
-| `data-sly-include` | Include static HTL file | `<div data-sly-include="footer.html"></div>` |
-| `data-sly-template` | Define a reusable template | `<template data-sly-template.greet="${@ name}">...</template>` |
-| `data-sly-call` | Call a reusable template | `<div data-sly-call="${greet @ name='Alice'}"></div>` |
-| `data-sly-list` | Loop with meta like index | `<p data-sly-list.item="${items}">${item} - ${itemList.index}</p>` |
-| `data-sly-unwrap` | Remove wrapper tag | `<div data-sly-unwrap>${text}</div>` |
-| `data-sly-element` | Set tag dynamically | `<div data-sly-element="${tag}">${content}</div>` |
+| HTL Directive       | Description                                                                         | Example                                                                              |
+| ------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| `${var}`            | Output variables                                                                    | `${title}`                                                                           |
+| `data-sly-test`     | Conditional rendering                                                               | `<div data-sly-test="${user.loggedIn}">Welcome</div>`                                |
+| `data-sly-repeat`   | Looping through list                                                                | `<li data-sly-repeat.item="${items}">${item.name}</li>`                              |
+| `data-sly-use`      | Bind model/ script (Linking to backend models/ Use backend Java model or JS script) | `<div data-sly-use.model="com.example.Model">`                                       |
+| `data-sly-resource` | Include child component                                                             | `<div data-sly-resource="${'hero' @ resourceType='project/components/hero'}"></div>` |
+| `data-sly-include`  | Include static HTL file                                                             | `<div data-sly-include="footer.html"></div>`                                         |
+| `data-sly-template` | Define a reusable template                                                          | `<template data-sly-template.greet="${@ name}">...</template>`                       |
+| `data-sly-call`     | Call a reusable template                                                            | `<div data-sly-call="${greet @ name='Alice'}"></div>`                                |
+| `data-sly-list`     | Loop with meta like index (More control over iteration)                             | `<p data-sly-list.item="${items}">${item} - ${itemList.index}</p>`                   |
+| `data-sly-unwrap`   | Remove wrapper tag                                                                  | `<div data-sly-unwrap>${text}</div>`                                                 |
+| `data-sly-element`  | Dynamic HTML tag                                                                    | `<div data-sly-element="${tag}">${content}</div>`                                    |
 
 ## 🧪 HANDS-ON HTL EXAMPLE
 
