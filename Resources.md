@@ -1,14 +1,15 @@
 ## 📚 Additional AEM Learning Resources
 
-### 🎥 Sankham MarTech (YouTube Channel)
+### Sankham MarTech
 
--   📺 **Theory Playlist (33 Videos)**: [AEM Full Theory Playlist – Sankham MarTech](https://www.youtube.com/playlist?list=PL5l69Ui6w3V_4naQpzfOC-enLOzcxHm-H)
+-   YouTube Playlist (33 Videos) : [AEM Full Theory Playlist – Sankham MarTech](https://www.youtube.com/playlist?list=PL5l69Ui6w3V_4naQpzfOC-enLOzcxHm-H)
+-   Website : https://sankhamtech.com/
 
-### 🧠 AEM Geeks
+### AEM Geeks
 
--   🌐 **Website**: [https://aemgeeks.com](https://aemgeeks.com/)
--   📺 **YouTube Channel**: [AEM Geeks on YouTube](https://www.youtube.com/@AEMGeeks)
--   🔍 **Other Platforms**: Search for **"AEM Geeks GitHub"**, **"AEM Geeks Blog"**, etc.
+-   **Website**: [https://aemgeeks.com](https://aemgeeks.com/)
+-   **YouTube Channel**: [AEM Geeks on YouTube](https://www.youtube.com/@AEMGeeks)
+-   **Other Platforms**: Search for **"AEM Geeks GitHub"**, **"AEM Geeks Blog"**, etc.
 
 ---
 
