@@ -38,8 +38,7 @@
 ```
 
 5. AEM Templates, Components, Authoring
-   <br><img src="../Images/AEM_Author_and Publish_Flow.png" alt="AEM_Author_and Publish_Flow" width="40%" style="display: block; margin: auto;">
-   <br>
+   <img src="../Images/AEM_Author_and Publish_Flow.png" alt="AEM_Author_and Publish_Flow" width="40%" style="display: block; margin: auto;"> <br>
 
     - AEM contains a lot of templates and options to select from like Container, Progress bar, Tabs, Accordian,Text Box, Paragraph, Buttons, Breadcrumb, Carousel etc
     - AEM Author Environment (CURD Page) : Changes can be done till this. After Authoring; Replication happens and Page is went to Publisher
@@ -49,7 +48,7 @@
 
 Flow (Developers - Read opposite) : User URL > CDN > Load balancer > Dispatcher > AEM Pub > AEM Author > CD > Developer
 
-<br><img src="../Images/AEM_Page_Render_Flow.png" alt="AEM_Page_Render_Flow" width="40%" style="display: block; margin: auto;">
+<img src="../Images/AEM_Page_Render_Flow.png" alt="AEM_Page_Render_Flow" width="40%" style="display: block; margin: auto;">
 <br>
 
 ```
