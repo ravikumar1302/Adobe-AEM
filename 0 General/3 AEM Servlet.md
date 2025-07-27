@@ -1,9 +1,9 @@
 # AEM Servlet
 
-<img src="../Images/AEM_Servlet.png" alt="AEM_Servlet" width="40%" style="display: block; margin: auto;">
-<br>
-<img src="../Images/Servlet_Life_Cycle.png" alt="Servlet_Life_Cycle" width="40%" style="display: block; margin: auto;">
-<br>
+<div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between;">
+    <img src="../Images/AEM_Servlet.png" alt="AEM_Servlet" width="45%">
+    <img src="../Images/Servlet_Life_Cycle.png" alt="Servlet_Life_Cycle" width="40%">
+</div><br>
 
 1. AEM Servlet :
 
