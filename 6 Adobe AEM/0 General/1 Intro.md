@@ -24,17 +24,16 @@
 ```
 
 4. OSGI Container :
-   <br><img src="../Images/AEM_Architecture.png" alt="AEM Architecture" width="40%" style="display: block; margin: auto;">
-   <br>
+   <br><img src="../Images/AEM_Architecture.png" alt="AEM Architecture" width="40%" style="display: block; margin: auto;"><br>
 
 ```
 - OSGi is a Java framework for developing and deploying modular software programs and libraries. It allows applications to be broken into reusable, dynamic modules (called bundles), which can be independently started, stopped, updated, or removed at runtime.
 
 - AEM Architecture:
-    - AEM (Application Layer): The Adobe Experience Manager application itself; implemented as OSGi bundles running within Felix.
-    - Apache Sling (Web Application Framework): Runs on Felix; maps HTTP requests to JCR content and handles rendering.
-    - Apache Jackrabbit Oak (JCR Repository / Storage Layer): Stores AEM's content and data. Felix provides its runtime environment.
-    - Apache Felix (OSGi Java Container): The foundational runtime environment enabling modularity (install, start, stop, update bundles) without restarts.
+   - AEM (Application Layer): The Adobe Experience Manager application itself; implemented as OSGi bundles running within Felix.
+   - Apache Sling (Web Application Framework): Runs on Felix; maps HTTP requests to JCR content and handles rendering.
+   - Apache Jackrabbit Oak (JCR Repository / Storage Layer): Stores AEM's content and data. Felix provides its runtime environment.
+   - Apache Felix (OSGi Java Container): The foundational runtime environment enabling modularity (install, start, stop, update bundles) without restarts.
 ```
 
 5. AEM Templates, Components, Authoring
@@ -53,21 +52,21 @@ Flow (Developers - Read opposite) : User URL > CDN > Load balancer > Dispatcher 
 
 ```
 Remember the Newspaper Example for this.
-    - CDN (Content Delivery Network): caches Static content geographically closer to users, speeding up delivery and reducing server load.
-    - Load Balancer: Distributes user requests among multiple servers for performance and reliability.
-    - Dispatcher: Caches AEM content, balances requests to AEM Publish instances and manage security (first line of defense for AEM).
-    - AEM Pub (Publish Instance): Serves published website content to end-users.
-    - AEM Author (Author Instance): Used by authors to create and manage website content.
-    - CD (Code Deployment): The process of deploying application code (from developers) to AEM instances.
+   - CDN (Content Delivery Network): caches Static content geographically closer to users, speeding up delivery and reducing server load.
+   - Load Balancer: Distributes user requests among multiple servers for performance and reliability.
+   - Dispatcher: Caches AEM content, balances requests to AEM Publish instances and manage security (first line of defense for AEM).
+   - AEM Pub (Publish Instance): Serves published website content to end-users.
+   - AEM Author (Author Instance): Used by authors to create and manage website content.
+   - CD (Code Deployment): The process of deploying application code (from developers) to AEM instances.
 
-    - Web Server Functionality: The Dispatcher acts as a web server (typically an Apache HTTP Server with the AEM Dispatcher module). Its primary roles are to:
-         - Serve static content directly from its cache.
-         - Proxy requests for dynamic content to the AEM Publish instances.
-         - Handle URL re-writing, vanity URLs, and other web server-level tasks.
+   - Web Server Functionality: The Dispatcher acts as a web server (typically an Apache HTTP Server with the AEM Dispatcher module). Its primary roles are to:
+      - Serve static content directly from its cache.
+      - Proxy requests for dynamic content to the AEM Publish instances.
+      - Handle URL re-writing, vanity URLs, and other web server-level tasks.
 
-    - Application Server Functionality: The AEM Pub (Publish) and AEM Author instances inherently provide the application server functionality.
-    - AEM is a Java web application. It uses an embedded servlet engine (e.g., Jetty) or can deploy on external ones (e.g., Tomcat).
-    - AEM instances process dynamic requests, render pages from content, execute Java code, and manage database interactions – essentially, the core application logic.
+   - Application Server Functionality: The AEM Pub (Publish) and AEM Author instances inherently provide the application server functionality.
+   - AEM is a Java web application. It uses an embedded servlet engine (e.g., Jetty) or can deploy on external ones (e.g., Tomcat).
+   - AEM instances process dynamic requests, render pages from content, execute Java code, and manage database interactions – essentially, the core application logic.
 ```
 
 7. AEM SLING End to End Flow
@@ -106,25 +105,30 @@ Remember the Newspaper Example for this.
 8. HTL : HTML Template Language
 
 ```
-    - HTL is a templating language created by Adobe for AEM
-    - It's designed to replace JSP (JavaServer Pages) in AEM projects.
-    - In AEM, Sling Template Language (Sightly) — now known as HTL is a templating language used to build dynamic components and web pages.
-    - Purpose: Securely bind dynamic content into HTML templates in AEM.
-    - e.g. <div data-sly-set="${variable}">
-        Syntax is HTML-like but with dynamic elements (data-sly-\*, ${}).
-    - HTL Scripts are also processed by AEM as servlet
-    - HTL can do : Variable Setting, If Condition, Operators, Loops, Function, Include another file, Display Context, Global Objects etc
-    - More Details on HTL in "Frontend > HTL" folder in this repository
+   - HTL is a templating language created by Adobe for AEM
+   - It's designed to replace JSP (JavaServer Pages) in AEM projects.
+   - In AEM, Sling Template Language (Sightly) — now known as HTL is a templating language used to build dynamic components and web pages.
+   - Purpose: Securely bind dynamic content into HTML templates in AEM.
+   - e.g. <div data-sly-set="${variable}">
+      Syntax is HTML-like but with dynamic elements (data-sly-\*, ${}).
+   - HTL Scripts are also processed by AEM as servlet
+   - HTL can do : Variable Setting, If Condition, Operators, Loops, Function, Include another file, Display Context, Global Objects etc
+   - More Details on HTL in "Frontend > HTL" folder in this repository
 ```
 
 9. Maven :
    Maven is a build and dependency management tool used in AEM to compile code, manage libraries, and deploy packages to AEM instances.
 
 ```
-    - Project structure: Organizes AEM code (core, UI, content) using AEM Archetype.
-    - Dependency management: Automatically fetches required AEM and Java libraries.
-    - Build automation: Compiles Java code, creates deployable packages (.zip).
-    - Deployment: Installs packages into AEM using commands like "mvn install"
-    - Environment config: Supports different run modes and environments.
+   - Project structure: Organizes AEM code (core, UI, content) using AEM Archetype.
+   - Dependency management: Automatically fetches required AEM and Java libraries.
+   - Build automation: Compiles Java code, creates deployable packages (.zip).
+   - Deployment: Installs packages into AEM using commands like "mvn install"
+   - Environment config: Supports different run modes and environments.
 
 ```
+
+10. What are AEM Content Fragments?
+    -   Content Fragments (CFs) in AEM are reusable, structured content units.
+    -   They’re built using Content Fragment Models, which define fields like text, date, number, references, etc.
+    -   CFs are perfect for omnichannel content delivery (web, mobile, voice, etc.) because they contain pure content, independent of layout or styling.
