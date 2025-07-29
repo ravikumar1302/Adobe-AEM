@@ -65,6 +65,63 @@ This hierarchical approach allows DNS to handle billions of queries every day, e
     - Think of it as: The driver who takes you on that journey to find the IP.
 
 3. Types of DNS Queries
+
     - Recursive Query: The DNS server must return the final answer (record or error), even if it has to query other servers.
     - Iterative Query: The DNS server returns the best answer it can, usually a referral to another server closer to the answer.
     - Non-Recursive Query: The DNS server answers directly from its cache, without querying other servers.
+
+4. DNS Caching and TTL (Time-to-Live):
+
+    - **DNS caching** : is a mechanism that stores DNS records locally to avoid querying external DNS servers repeatedly for the same information. This speeds up the browsing experience and reduces network traffic.
+    - **TTL (Time-to-Live)** : is the amount of time that a DNS record is cached before it expires. When the TTL expires, the cache is cleared and a fresh DNS query must be made. The TTL is defined by the authoritative DNS server, which can adjust this based on the nature of the domain.
+
+5. **How to Configure DNS for a Public Website**
+
+    - When you register a domain and want to make your website publicly accessible, you need to configure DNS (Domain Name System) records.
+
+    1. A Record (Address Record)
+
+    - Points your domain to the IPv4 address of your web server.
+    - Essential for making your website accessible via its domain.
+    - Example: example.com → 192.0.2.1
+
+    2. AAAA Record (IPv6 Address Record)
+
+    - Maps your domain to an IPv6 address.
+    - Supports modern networks that use IPv6.
+    - Example: example.com → 2001:0db8:85a3::8a2e:0370:7334
+
+    3. MX Record (Mail Exchange Record)
+
+    - Directs email to your domain’s mail server.
+    - Required for sending/receiving emails like contact@yourdomain.com.
+    - Example: example.com → mail.example.com
+
+    4. CNAME Record (Canonical Name Record)
+
+    - Aliases one domain/subdomain to another.
+    - Useful for pointing www, blog, or external services to the main domain.
+    - Example: www.example.com → example.com
+
+    5. TXT Record (Text Record)
+
+    - Stores text data for domain verification and email security (SPF, DKIM, DMARC).
+    - Example: example.com → "v=spf1 include:\_spf.google.com ~all"
+
+    6. NS Record (Name Server Record)
+
+    - Specifies which name servers are authoritative for the domain.
+    - Must be set to the DNS provider’s nameservers to manage other records.
+    - Example: example.com → ns1.hostingprovider.com
+
+    7. SRV Record (Service Record)
+
+    - Defines the location (hostname, port, protocol) of services like SIP, XMPP.
+    - Used for VoIP, chat, or Microsoft services.
+    - Example: \_sip.\_tcp.example.com → sipserver.example.com:5060
+
+    8. PTR Record (Pointer Record)
+
+    - Used for reverse DNS: maps IP address back to domain name.
+    - Commonly used for email server verification.
+    - Example: 203.0.113.45.in-addr.arpa → mail.example.com

@@ -32,7 +32,37 @@
     10. Technical Support & Troubleshooting : Resolve site issues like downtime or slow performance promptly.
     ```
 
-3. Websites to Help you During (Or After) the Above Flow
+3. Type of Hosting
+
+    1. Shared Hosting
+
+    - Description: Multiple websites share the same server and its resources.
+    - Best for: Beginners and small websites with low traffic.
+    - Pros: Low cost, easy to set up.
+    - Cons: Limited performance and control; affected by other sites on the same server.
+
+    2. VPS Hosting (Virtual Private Server)
+
+    - Description: One physical server is divided into several virtual servers, each acting independently.
+    - Best for: Medium-sized websites needing better performance and more control.
+    - Pros: More control and resources than shared hosting.
+    - Cons: Higher cost than shared hosting; requires some technical skills.
+
+    3. Cloud Hosting
+
+    - Description: Websites run on a network of connected virtual and physical cloud servers.
+    - Best for: Websites with unpredictable or growing traffic.
+    - Pros: Scalable, reliable, good uptime.
+    - Cons: Can become expensive; less control than dedicated hosting.
+
+    4. Dedicated Hosting
+
+    - Description: You rent an entire physical server dedicated to your website only.
+    - Best for: Large businesses and high-traffic websites.
+    - Pros: Maximum control, high performance, and full resource allocation.
+    - Cons: Expensive and requires advanced technical knowledge to manage.
+
+4. Websites to Help you During (Or After) the Above Flow
    | **Purpose** | **Tool Name** | **Website Link** | **Description** |
    | ---------------------------------- | ---------------------- | ---------------------------------------------------------- | --------------------------------------------------------------- |
    | Check Domain Availability | GoDaddy Domain Checker | [https://www.godaddy.com/](https://www.godaddy.com/) | Helps you pick the right domain for your business/blog. |
