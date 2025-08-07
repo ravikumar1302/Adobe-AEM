@@ -1,6 +1,10 @@
 ## BASIC CSS THEORY :
 
 -   CSS was first proposed by Håkon Wium Lie on 10 October 1994. At the time, Lie was working with Tim Berners-Lee at CERN.
+-   CSS (Cascading Style Sheets) is a language designed to simplify the process of making web pages presentable.
+-   The main advantages are the separation of content (in HTML) and styling (in CSS). Also, the same CSS rules can be used across all pages and not have to be rewritten.
+-   HTML uses tags and CSS uses rule sets. CSS styles are applied to the HTML element using selectors.
+
 -   **Main Topics** :
     -   Type of CSS : Inline, internal and external CSS
     -   Selectors
@@ -36,7 +40,7 @@
 
 3.  Three Type : Inline CSS, Internal CSS and External CSS :
 
-    -   Priority Order : Inline > Internal > External
+    -   **Priority Order** : `Inline > Internal > External`
     -   In INLINE style attribute is used, in Internal `<Style>` tag is used. Add all CSS at one place in HTML file
     -   Demo Code of INTERNAL : Written inside `<head>` tag
 
@@ -54,7 +58,7 @@
     </html>
     ```
 
-    d) Use <link> tag in html to link EXTERNAL CSS file : `<link rel = "stylesheet" type = "text/css" href = "file_name.css">`
+    -   Use <link> tag in html to link EXTERNAL CSS file : `<link rel = "stylesheet" type = "text/css" href = "file_name.css">`
 
 4.  Five Simple Selectors :
 
