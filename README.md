@@ -21,7 +21,6 @@ Whether you're a beginner exploring the basics of HTML/CSS/JS or someone looking
 -   **Databases** – Concepts and queries for handling data.
 -   **Adobe AEM** – Content management and workflow automation.
 -   **Cloud Computing** – Fundamental cloud concepts and practices.
--   **Batch Scripts** – Small automation scripts.
 
 ---
 
