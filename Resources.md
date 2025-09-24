@@ -59,3 +59,13 @@
 | Sling Models | [AEM Docs](https://experienceleague.adobe.com/en/docs/experience-manager) |
 | AEM Package Manager | [AEM Docs](https://experienceleague.adobe.com/en/docs/experience-manager) |
 | Sling Events | [AEM Docs](https://experienceleague.adobe.com/en/docs/experience-manager) |
+
+---
+
+## Fronetnd Other Important Resources
+
+| Topics                | Source to Learn                                                                     |
+| --------------------- | ----------------------------------------------------------------------------------- |
+| Main website          | [CSS Tricks](https://css-tricks.com/guides/)                                        |
+| CSS Flexbox Guide     | [CSS Flexbox Layout Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) |
+| CSS Grid Layout Guide | [CSS Grid Layout Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)    |
