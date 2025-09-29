@@ -64,8 +64,10 @@
 
 ## Fronetnd Other Important Resources
 
-| Topics                | Source to Learn                                                                     |
-| --------------------- | ----------------------------------------------------------------------------------- |
-| Main website          | [CSS Tricks](https://css-tricks.com/guides/)                                        |
-| CSS Flexbox Guide     | [CSS Flexbox Layout Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) |
-| CSS Grid Layout Guide | [CSS Grid Layout Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)    |
+| Topics                          | Source to Learn                                                                     |
+| ------------------------------- | ----------------------------------------------------------------------------------- |
+| Main website                    | [CSS Tricks](https://css-tricks.com/guides/)                                        |
+| CSS Flexbox Guide               | [CSS Flexbox Layout Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) |
+| Flexbox playground              | [Flexbox](https://flexbox.tech/)                                                    |
+| CSS Grid Layout Guide           | [CSS Grid Layout Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)    |
+| Frontend practice with examples | [Codepen](https://codepen.io/)                                                      |
