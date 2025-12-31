@@ -36,9 +36,8 @@
    - Apache Felix (OSGi Java Container): The foundational runtime environment enabling modularity (install, start, stop, update bundles) without restarts.
 ```
 
-5. AEM Templates, Components, Authoring
-   <br>
-   <img src="../Images/AEM_Author_and Publish_Flow.png" alt="AEM_Author_and Publish_Flow" width="40%" style="display: block; margin: auto;"> <br>
+5. AEM Templates, Components, Authoring :
+   <br><img src="../Images/AEM_Author_and Publish_Flow.png" alt="AEM_Author_and Publish_Flow" width="40%" style="display: block; margin: auto;"><br>
 
     - AEM contains a lot of templates and options to select from like Container, Progress bar, Tabs, Accordian,Text Box, Paragraph, Buttons, Breadcrumb, Carousel etc
     - AEM Author Environment (CURD Page) : Changes can be done till this. After Authoring; Replication happens and Page is went to Publisher
