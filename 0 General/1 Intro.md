@@ -37,6 +37,7 @@
 ```
 
 5. AEM Templates, Components, Authoring
+   <br>
    <img src="../Images/AEM_Author_and Publish_Flow.png" alt="AEM_Author_and Publish_Flow" width="40%" style="display: block; margin: auto;"> <br>
 
     - AEM contains a lot of templates and options to select from like Container, Progress bar, Tabs, Accordian,Text Box, Paragraph, Buttons, Breadcrumb, Carousel etc
