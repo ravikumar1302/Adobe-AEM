@@ -49,7 +49,7 @@
     | **Authoring Preference**  | If authors can work with structured content (Content Fragments, models)      | If authors prefer WYSIWYG editing, page composition, and drag-and-drop components |
 
 7.  Differentiation Factors: CMS Types
-    <img src="../Images/CMS_Types.png" alt="CMS_Types" width="40%" style="display: block; margin: auto;"><br>
+    <br><img src="../Images/CMS_Types.png" alt="CMS_Types" width="40%" style="display: block; margin: auto;"><br>
     | **Type** | **Description** |
     | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
     | **Headful CMS** | - Traditional CMS model where both **content** and **presentation (frontend)** are tightly coupled.<br> - Authors use **page editors**, templates, and components.<br> - Example: Adobe Experience Manager (AEM) in full-site mode, WordPress. |
